@@ -141,28 +141,28 @@
               <button class="botonbusqueda" @click="Truora">Truora</button>
               <div class="container-siglas">
                 <p class = siglas>{{ datosAlmacenados.archivoTruora}}</p>
-                <fa @click="copiarSs" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
+                <fa @click="copiarTruora" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
               </div>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Ramajudicial">Rama judicial</button>
               <div class="container-siglas">
                 <p class = siglas>{{ datosAlmacenados.archivoRj}}</p>
-                <fa @click="copiarSs" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
+                <fa @click="copiarRj" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
               </div>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Offshoreleaks">Offshoreleaks</button>
               <div class="container-siglas">
                 <p class = siglas>{{ datosAlmacenados.archivoOff}}</p>
-                <fa @click="copiarSs" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
+                <fa @click="copiarOff" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
               </div>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Wc">Wc</button>
               <div class="container-siglas">
                 <p class = siglas>{{ datosAlmacenados.archivoWc}}</p>
-                <fa @click="copiarSs" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
+                <fa @click="copiarWc" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
               </div>
             </div>
           </div>
