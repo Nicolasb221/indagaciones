@@ -422,8 +422,6 @@
   .container-bot-b{
     display: flex;
     justify-content: center;    
-    flex-grow: 2;
-
   }
   .botonbusqueda{
     color:var(--color-azul-kp);
