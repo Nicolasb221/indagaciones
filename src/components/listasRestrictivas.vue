@@ -408,7 +408,7 @@
     justify-content: space-evenly;
   }
   .container-bot{
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     margin: 5px;
     padding: 5px;
