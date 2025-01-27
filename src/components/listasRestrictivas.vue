@@ -348,6 +348,7 @@
     border-bottom: 2px solid var(--color-morado-claro2);
     background: linear-gradient(0deg, var(--color-morado-clarot), var(--color-gradiente-fin2));
     margin: 20px;
+    transition: background 0.3s ease, border-bottom-color 0.3s ease;
   }
   .input-container-input:focus{
     background: linear-gradient(0deg, var(--color-morado-clarot), var(--color-gradiente-fin));
