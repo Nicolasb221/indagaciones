@@ -393,13 +393,11 @@
 
   .container-buttons{
     display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     max-width: 100%;
   }
   .container-bot{
     display: flex;
-    flex-flow: row wrap;
     flex-direction: column;
     margin: 5px;
     padding: 5px;
