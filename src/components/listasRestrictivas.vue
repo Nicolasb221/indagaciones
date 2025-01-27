@@ -416,7 +416,6 @@
     display: flex;
     justify-content: center;    
     flex-grow: 2;
-    height: 20px;
 
   }
   .botonbusqueda{
