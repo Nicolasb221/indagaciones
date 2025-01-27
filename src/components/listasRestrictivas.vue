@@ -396,6 +396,7 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
     max-width: 100%;
+    border: 8px solid var(--color-azul-morado);
   }
   .container-bot{
     display: flex;
