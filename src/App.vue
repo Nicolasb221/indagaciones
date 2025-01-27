@@ -21,6 +21,7 @@
     --color-validate : #11ac18;
     --color-gradiente-inicio: rgba(4, 0, 251, 0.09);
     --color-gradiente-fin: rgba(255, 255, 255, 0.3);
+    --color-gradiente-fin2: rgba(255, 255, 255, 0);
     --color-borde: rgba(255, 255, 255, 0.2);
     --color-sombra: rgba(0, 0, 0, 0.1);
   }

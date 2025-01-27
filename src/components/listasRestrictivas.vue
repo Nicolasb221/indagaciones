@@ -346,7 +346,7 @@
     border-radius: 10px;
     outline: none;
     border-bottom: 2px solid var(--color-morado-claro2);
-    background: linear-gradient(0deg, var(--color-morado-clarot), var(--color-gradiente-fin));
+    background: linear-gradient(0deg, var(--color-morado-clarot), var(--color-gradiente-fin2));
     margin: 20px;
 
   }
