@@ -432,6 +432,7 @@
     cursor:pointer;
     font-size: 18px;
     margin:5px;
+    font-family: 'Bubbler One', sans-serif;
 
   }
   </style>
