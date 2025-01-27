@@ -377,6 +377,7 @@
   }
   .container-datos-i{
     display:flex;
+    max-width: 900px;
     flex-direction: column;
     margin: 20px;
     padding: 20px;
@@ -393,6 +394,7 @@
 
   .container-buttons{
     display:flex;
+    max-width: 900px;
     flex-flow: row wrap;
     margin: 20px;
     padding: 20px;
