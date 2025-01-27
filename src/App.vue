@@ -11,7 +11,7 @@
 
 <style>
   :root{
-    --color-fondo-n : linear-gradient(rgba(38, 48, 105, 0.835),#191822);
+    --color-fondo-n : #FFFFFF;
   }
   body{
     margin-top: 60px;
