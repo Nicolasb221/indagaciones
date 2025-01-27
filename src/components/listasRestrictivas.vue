@@ -13,7 +13,6 @@
           <fa @click="almacenarDatos" :icon="['fas', 'circle-right']" size="2xl" style="cursor: pointer;color: #ffffff;"/>
         </div>
       </form>
-  
       <div class="container-datos" v-if="datosAlmacenados">
         <div class="container-datos-i">
           <h3 class="titulo2">Tercero</h3>
@@ -26,182 +25,92 @@
           <div class="container-bot">
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Linkedin">Linkedin</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoLinkedin}}</p>
-                <fa @click="copiarLinkedin" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Pep">PEP</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoPEP}}</p>
-                <fa @click="copiarPep" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Informa">Informa</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoInforma}}</p>
-                <fa @click="copiarInforma" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
           </div>
           <div class="container-bot">
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Corrupcion">Corrupción</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoCorrupcion}}</p>
-                <fa @click="copiarCorrupcion" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Narcotrafico">Narcotráfico</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoNarcotrafico}}</p>
-                <fa @click="copiarNarcotrafico" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Lavado">Lavado de</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoLavado}}</p>
-                <fa @click="copiarLavado" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Fraude">Fraude</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoFraude}}</p>
-                <fa @click="copiarFraude" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Facesearch">Facesearch</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoFace}}</p>
-                <fa @click="copiarFace" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
-   
           </div>
           <div class="container-bot">
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Facebook">Facebook</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoFacebook}}</p>
-                <fa @click="copiarFacebook" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Instagram">Instagram</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoInstagram}}</p>
-                <fa @click="copiarInstagram" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="TikTok">TikTok</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoTiktok}}</p>
-                <fa @click="copiarTiktok" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Pinterest">Pinterest</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoPinterest}}</p>
-                <fa @click="copiarPinterest" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Twitter">X</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoX}}</p>
-                <fa @click="copiarX" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Youtube">Youtube</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoYoutube}}</p>
-                <fa @click="copiarYoutube" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Socialsearch">Social search</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoSs}}</p>
-                <fa @click="copiarSs" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
-
           </div>
           <div class="container-bot">
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Truora">Truora</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoTruora}}</p>
-                <fa @click="copiarTruora" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Ramajudicial">Rama judicial</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoRj}}</p>
-                <fa @click="copiarRj" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Offshoreleaks">Offshoreleaks</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoOff}}</p>
-                <fa @click="copiarOff" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Wc">Wc</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoWc}}</p>
-                <fa @click="copiarWc" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Contaduria">Contaduría</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoContaduria}}</p>
-                <fa @click="copiarContaduria" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Contaduria">Contaduría</button>
-              <div class="container-siglas">
-                <p class = siglas>{{ datosAlmacenados.archivoContaduria}}</p>
-                <fa @click="copiarContaduria" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
-              </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
   </template>
   
   <script>
-
-
   export default {
     name: "listasRestrictivas",
     data() {
       return {
-        nombre: '', // Variable reactiva para almacenar el valor del input
+        nombre: '',
         apellido:'', 
-        datosAlmacenados: null, // Para almacenar los datos cuando se envíen
+        datosAlmacenados: null,
         formularioVisible: true,
         iniciales: '',
       };
     },
     methods: {
-
       almacenarDatos() {
         const textoLabel = 'Ingresa tu nombre:';
         const conca = `${this.nombre} ${this.apellidos}`;
@@ -239,14 +148,12 @@
         this.apellidos = '';
         this.documento = '';
       },
-
       copyPaste(archivoTemp) {
         if (archivoTemp) {
           const texto = this.datosAlmacenados.archivoTemp;
           navigator.clipboard.writeText(texto)
         }
       },
-      
       obtenerIniciales(cadena){
         return cadena
           .split(' ')
@@ -254,7 +161,6 @@
           .join('');
 
       },
-
       Linkedin() {
         const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Linkedin`;
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
@@ -394,7 +300,6 @@
     }
   };
   </script>
-  
   <style scoped>
   .box-container {
     width: 70%;
@@ -404,7 +309,6 @@
     justify-content: space-evenly;
     justify-items: center;
     align-items: center;
-    
     border-radius: 8px;
   }
   input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;}
@@ -414,7 +318,6 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
   }
   .titulo{font-size: 50px;text-align: center;color:#ffffff;}
   .container-inputs{
@@ -482,18 +385,11 @@
     flex-direction: column;
     margin: 10px;
   }
-  .container-siglas{
-    display: flex;
-    align-items: center;
-    height: 20px;
-  }
-  .siglas{font-size:15px; margin: 20px;margin-left: 0;}
   .container-bot-b{
     display: flex;
     justify-content: flex-start;
 
   }
-
   .botonbusqueda{
     width: 30%;
     margin-right: 20%;
