@@ -385,10 +385,11 @@
       },
 
       Linkedin() {
-      const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Linkedin`;
-      const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
-      copiarLinkedin(archivoLinkedin)
-      window.open(urlBusqueda, '_blank');
+        const archivoLinkedin = this.datosAlmacenados.archivoLinkedin;
+        const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Linkedin`;
+        const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
+        this.copiarLinkedin(archivoLinkedin)
+        window.open(urlBusqueda, '_blank');
       },
       Pep() {
       const consulta = `${this.datosAlmacenados.documentoId}`;
