@@ -1,5 +1,5 @@
 <template>
-  
+
     <div class="box-container">
       <form v-if="formularioVisible" @submit.prevent="almacenarDatos" class="container-formulario">
         <label for="nombre" class="titulo">Indagacion Terceros</label><br>
@@ -391,5 +391,6 @@
   .botonbusqueda{
     width: 50%;
     height: 20px;
+    color: transparent;
   }
   </style>
