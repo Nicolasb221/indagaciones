@@ -409,6 +409,7 @@
   }
   .container-bot{
     display: flex;
+    min-width: 150px initial;
     flex-direction: column;
     margin: 5px;
     padding: 5px;
