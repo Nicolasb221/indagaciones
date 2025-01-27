@@ -320,6 +320,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    border: 2px solid #483698;
+
   }
   .titulo{font-size: 50px;text-align: center;color:#483698;}
   .container-inputs{
