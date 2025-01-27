@@ -394,6 +394,7 @@
     color: #483698;
     background-color: transparent;
     border: none;
+    cursor:pointer
 
   }
   </style>
