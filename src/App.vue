@@ -13,7 +13,7 @@
 <style>
   :root{
     --color-fondo-n : #FFFFFF;
-    --color-azul-kp : #483698;
+    --color-azul-kp : #313182;
     --color-azul-morado: #4f4f9E;
     --color-validate : #11ac18;
     --color-gradiente-inicio: rgba(255, 255, 255, 0.1);

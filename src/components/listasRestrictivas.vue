@@ -338,20 +338,20 @@
   .input-container-input{
     display: flex;
     flex-grow: wrap;
-    color: #483698;
+    color: var(--color-azul-kp);
     font-family: 'Bubbler One', sans-serif;
     font-size: 15px;
     padding: 10px;
     border: none;
     border-radius: 10px;
-    outline: 2px solid #483698;
+    outline: 2px solid var(--color-azul-kp);
     background-color: transparent;
     transition: outline-color 500ms;
     margin: 20px;
 
   }
   .input-container-input::placeholder{
-    color:#483698;
+    color:var(--color-azul-kp);
     opacity: .7;
   }
   .boton-cargar{
@@ -367,7 +367,7 @@
     width: 80%;
     font-family: 'Bubbler One', sans-serif;
     flex-direction: column;
-    color: #483698;
+    color: var(--color-azul-kp);
     font-size: 25px;
 
   }
@@ -376,7 +376,7 @@
     flex-direction: column;
     margin: 20px;
   }
-  .titulo2{font-size: 50px;text-align: center;color:#483698;margin:10px;}
+  .titulo2{font-size: 50px;text-align: center;color:var(--color-azul-kp);margin:10px;}
 
   .parrafo{margin: 0;padding: 0;}
 
@@ -399,7 +399,7 @@
   .botonbusqueda{
     width: 50%;
     height: 20px;
-    color: #483698;
+    color:var(--color-azul-kp);
     background-color: transparent;
     border: none;
     cursor:pointer
