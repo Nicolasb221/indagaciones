@@ -203,13 +203,9 @@
     methods: {
 
       almacenarDatos() {
-        // Obtener el texto del label
         const textoLabel = 'Ingresa tu nombre:';
-
         const conca = `${this.nombre} ${this.apellidos}`;
         this.iniciales = this.obtenerIniciales(conca);
-
-        // Almacenar los datos
         this.datosAlmacenados = {
           label: textoLabel,
           valorN: this.nombre,
@@ -219,13 +215,11 @@
           archivoLinkedin: `${this.iniciales} - Linkedin`,
           archivoPEP: `${this.iniciales} - PEP`,
           archivoInforma: `${this.iniciales} - Vinculaciones`,
-
           archivoCorrupcion: `${this.iniciales} - Google - Corrupción`,
           archivoNarcotrafico: `${this.iniciales} - Google - Narcotráfico`,
           archivoLavado: `${this.iniciales} - Google - Lavado de`,
           archivoFraude: `${this.iniciales} - Google - Fraude`,
           archivoFace: `${this.iniciales} - Google - Facesearch`,
-
           archivoFacebook: `${this.iniciales} - Google - Facebook`,
           archivoInstagram: `${this.iniciales} - Google - Instagram`,
           archivoTiktok: `${this.iniciales} - Google - Tiktok`,
@@ -233,149 +227,26 @@
           archivoX: `${this.iniciales} - Google - X`,
           archivoYoutube: `${this.iniciales} - Google - Youtube`,
           archivoSs: `${this.iniciales} - Social Search`,
-
           archivoTruora: `${this.iniciales} - Truora`,
           archivoRj: `${this.iniciales} - Rama Judicial`,
           archivoOff: `${this.iniciales} - Google - Offshoreleaks`,
           archivoWc: `${this.iniciales} - WC`,
           archivoContaduria: `${this.iniciales} - Contaduría`,
           archivoTemp: '',
-
         };
-
         this.formularioVisible = false;
-
-        
-        // Limpiar el campo de texto
         this.nombre = '';
         this.apellidos = '';
         this.documento = '';
       },
-      copy(texto) {
-        navigator.clipboard.writeText(texto)
-      },
 
-      copiar2(archivoTemp) {
+      copyPaste(archivoTemp) {
         if (archivoTemp) {
           const texto = this.datosAlmacenados.archivoTemp;
-          this.copy(texto);
+          navigator.clipboard.writeText(texto)
         }
       },
-      copiarPep() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoPEP) {
-          const texto = this.datosAlmacenados.archivoPEP;
-          this.copy(texto);
-        }
-      },
-      copiarInforma() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoInforma) {
-          const texto = this.datosAlmacenados.archivoInforma;
-          this.copy(texto);
-        }
-      },
-      copiarCorrupcion() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoCorrupcion) {
-          const texto = this.datosAlmacenados.archivoCorrupcion;
-          this.copy(texto);
-        }
-      },
-      copiarNarcotrafico() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoNarcotrafico) {
-          const texto = this.datosAlmacenados.archivoNarcotrafico;
-          this.copy(texto);
-        }
-      },
-      copiarLavado() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoLavado) {
-          const texto = this.datosAlmacenados.archivoLavado;
-          this.copy(texto);
-        }
-      },
-      copiarFraude() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoFraude) {
-          const texto = this.datosAlmacenados.archivoFraude;
-          this.copy(texto);
-        }
-      },
-      copiarFace() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoFace) {
-          const texto = this.datosAlmacenados.archivoFace;
-          this.copy(texto);
-        }
-      },
-      copiarFacebook() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoFacebook) {
-          const texto = this.datosAlmacenados.archivoFacebook;
-          this.copy(texto);
-        }
-      },
-      copiarInstagram() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoInstagram) {
-          const texto = this.datosAlmacenados.archivoInstagram;
-          this.copy(texto);
-        }
-      },
-      copiarTiktok() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoTiktok) {
-          const texto = this.datosAlmacenados.archivoTiktok;
-          this.copy(texto);
-        }
-      },
-      copiarPinterest() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoPinterest) {
-          const texto = this.datosAlmacenados.archivoPinterest;
-          this.copy(texto);
-        }
-      },
-      copiarX() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoX) {
-          const texto = this.datosAlmacenados.archivoX;
-          this.copy(texto);
-        }
-      },
-      copiarYoutube() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoYoutube) {
-          const texto = this.datosAlmacenados.archivoYoutube;
-          this.copy(texto);
-        }
-      },
-      copiarSs() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoSs) {
-          const texto = this.datosAlmacenados.archivoSs;
-          this.copy(texto);
-        }
-      },
-      copiarTruora() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoTruora) {
-          const texto = this.datosAlmacenados.archivoTruora;
-          this.copy(texto);
-        }
-      },
-      copiarRj() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoRj) {
-          const texto = this.datosAlmacenados.archivoRj;
-          this.copy(texto);
-        }
-      },
-      copiarOff() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoOff) {
-          const texto = this.datosAlmacenados.archivoOff;
-          this.copy(texto);
-        }
-      },
-      copiarWc() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoWc) {
-          const texto = this.datosAlmacenados.archivoWc;
-          this.copy(texto);
-        }
-      },
-      copiarContaduria() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoContaduria) {
-          const texto = this.datosAlmacenados.archivoContaduria;
-          this.copy(texto);
-        }
-      },
-
+      
       obtenerIniciales(cadena){
         return cadena
           .split(' ')
@@ -385,104 +256,139 @@
       },
 
       Linkedin() {
-  
         const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Linkedin`;
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoLinkedin;
-        this.copiar2(this.datosAlmacenados.archivoTemp);
+        this.copyPaste(this.datosAlmacenados.archivoTemp);
         window.open(urlBusqueda, '_blank');
       },
       Pep() {
-      const consulta = `${this.datosAlmacenados.documentoId}`;
-      const urlBusqueda = `https://www.funcionpublica.gov.co/fdci/consultaCiudadana/consultaPEP?tipoRegistro=0&numeroDocumento=${encodeURIComponent(consulta)}&primerNombre=&segundoNombre=&primerApellido=&segundoApellido=&entidad=&dpto=&mun=&find=Buscar#resultadosBusqueda`;
-      this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoPEP;
-      this.copiar2(this.datosAlmacenados.archivoTemp);
-      window.open(urlBusqueda, '_blank');
+        const consulta = `${this.datosAlmacenados.documentoId}`;
+        const urlBusqueda = `https://www.funcionpublica.gov.co/fdci/consultaCiudadana/consultaPEP?tipoRegistro=0&numeroDocumento=${encodeURIComponent(consulta)}&primerNombre=&segundoNombre=&primerApellido=&segundoApellido=&entidad=&dpto=&mun=&find=Buscar#resultadosBusqueda`;
+        this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoPEP;
+        this.copyPaste(this.datosAlmacenados.archivoTemp);
+        window.open(urlBusqueda, '_blank');
       },
       Informa() {
-      const urlBusqueda = `https://www.informacolombia.com/InformaIntWeb/Main/id_sess/00081623158000034624480000041879/idioma/01/activa/2/id_tmp/974.0/prod/VINCULACIONES_RESULTADO_CONTEO/prod_desde/BUSCADOR_VINCULACIONES`;
-      window.open(urlBusqueda, '_blank');
+        const urlBusqueda = `https://www.informacolombia.com/InformaIntWeb/Main/id_sess/00081623158000034624480000041879/idioma/01/activa/2/id_tmp/974.0/prod/VINCULACIONES_RESULTADO_CONTEO/prod_desde/BUSCADOR_VINCULACIONES`;
+        this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoInforma;
+        this.copyPaste(this.datosAlmacenados.archivoTemp);
+        window.open(urlBusqueda, '_blank');
       },  
       Corrupcion() {
-      const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Corrupción`;
-      const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
-      window.open(urlBusqueda, '_blank');
+        const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Corrupción`;
+        const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
+        this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoCorrupcion;
+        this.copyPaste(this.datosAlmacenados.archivoTemp);
+        window.open(urlBusqueda, '_blank');
       },
       Narcotrafico() {
-      const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Narcotráfico`;
-      const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
-      window.open(urlBusqueda, '_blank');
+        const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Narcotráfico`;
+        const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
+        this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoNarcotrafico;
+        this.copyPaste(this.datosAlmacenados.archivoTemp);
+        window.open(urlBusqueda, '_blank');
       },
       Lavado() {
-      const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Lavado de`;
-      const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
-      window.open(urlBusqueda, '_blank');
+        const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Lavado de`;
+        const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
+        this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoLavado;
+        this.copyPaste(this.datosAlmacenados.archivoTemp);
+        window.open(urlBusqueda, '_blank');
       },
       Fraude() {
-      const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Fraude`;
-      const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
-      window.open(urlBusqueda, '_blank');
+        const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Fraude`;
+        const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
+        this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoFraude;
+        this.copyPaste(this.datosAlmacenados.archivoTemp);
+        window.open(urlBusqueda, '_blank');
       },
       Facesearch() {
-      const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA}`;
-      const urlBusqueda = `https://www.google.com/search?hl=es&tbm=isch&q=${encodeURIComponent(consulta)}`;
-      window.open(urlBusqueda, '_blank');
+        const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA}`;
+        const urlBusqueda = `https://www.google.com/search?hl=es&tbm=isch&q=${encodeURIComponent(consulta)}`;
+        this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoFace;
+        this.copyPaste(this.datosAlmacenados.archivoTemp);
+        window.open(urlBusqueda, '_blank');
       },
       Facebook() {
-      const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Facebook`;
-      const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
-      window.open(urlBusqueda, '_blank');
+        const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Facebook`;
+        const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
+        this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoFacebook;
+        this.copyPaste(this.datosAlmacenados.archivoTemp);
+        window.open(urlBusqueda, '_blank');
       },   
       Instagram() {
-      const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Instagram`;
-      const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
-      window.open(urlBusqueda, '_blank');
+        const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Instagram`;
+        const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
+        this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoInstagram;
+        this.copyPaste(this.datosAlmacenados.archivoTemp);
+        window.open(urlBusqueda, '_blank');
       },   
       TikTok() {
-      const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + TikTok`;
-      const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
-      window.open(urlBusqueda, '_blank');
+        const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + TikTok`;
+        const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
+        this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoTiktok;
+        this.copyPaste(this.datosAlmacenados.archivoTemp);
+        window.open(urlBusqueda, '_blank');
       },   
       Pinterest() {
-      const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Pinterest`;
-      const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
-      window.open(urlBusqueda, '_blank');
+        const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Pinterest`;
+        const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
+        this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoPinterest;
+        this.copyPaste(this.datosAlmacenados.archivoTemp);
+        window.open(urlBusqueda, '_blank');
       },   
       Twitter() {
-      const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + X`;
-      const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
-      window.open(urlBusqueda, '_blank');
+        const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + X`;
+        const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
+        this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoX;
+        this.copyPaste(this.datosAlmacenados.archivoTemp);
+        window.open(urlBusqueda, '_blank');
       },  
       Youtube() {
-      const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Youtube`;
-      const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
-      window.open(urlBusqueda, '_blank');
-      }, 
+        const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Youtube`;
+        const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
+        this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoYoutube;
+        this.copyPaste(this.datosAlmacenados.archivoTemp);
+        window.open(urlBusqueda, '_blank');
+      },
       Socialsearch() {
-      const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.apellidosSS}`;
-      const urlBusqueda = `https://www.social-searcher.com/social-buzz/?q5=${encodeURIComponent(consulta)}`;
-      window.open(urlBusqueda, '_blank');
+        const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.apellidosSS}`;
+        const urlBusqueda = `https://www.social-searcher.com/social-buzz/?q5=${encodeURIComponent(consulta)}`;
+        this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoSs;
+        this.copyPaste(this.datosAlmacenados.archivoTemp);
+        window.open(urlBusqueda, '_blank');
       },    
       Truora() {
-      const urlBusqueda = `https://checks.truora.com/#/dashboard/check/custom`;
-      window.open(urlBusqueda, '_blank');
+        const urlBusqueda = `https://checks.truora.com/#/dashboard/check/custom`;
+        this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoTruora;
+        this.copyPaste(this.datosAlmacenados.archivoTemp);
+        window.open(urlBusqueda, '_blank');
       },    
       Ramajudicial() {
-      const urlBusqueda = `https://consultaprocesos.ramajudicial.gov.co/Procesos/NombreRazonSocial`;
-      window.open(urlBusqueda, '_blank');
+        const urlBusqueda = `https://consultaprocesos.ramajudicial.gov.co/Procesos/NombreRazonSocial`;
+        this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoRj;
+        this.copyPaste(this.datosAlmacenados.archivoTemp);
+        window.open(urlBusqueda, '_blank');
       }, 
       Offshoreleaks() {
-      const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Offshoreleaks`;
-      const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
-      window.open(urlBusqueda, '_blank');
+        const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Offshoreleaks`;
+        const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
+        this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoOff;
+        this.copyPaste(this.datosAlmacenados.archivoTemp);
+        window.open(urlBusqueda, '_blank');
       }, 
       Wc() {
-      const urlBusqueda = `https://members.worldcompliance.com/SignIn.aspx`;
-      window.open(urlBusqueda, '_blank');
+        const urlBusqueda = `https://members.worldcompliance.com/SignIn.aspx`;
+        this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoWc;
+        this.copyPaste(this.datosAlmacenados.archivoTemp);
+        window.open(urlBusqueda, '_blank');
       },
       Contaduria() {
-      const urlBusqueda = `https://eris.contaduria.gov.co/BDME/#`;
-      window.open(urlBusqueda, '_blank');
+        const urlBusqueda = `https://eris.contaduria.gov.co/BDME/#`;
+        this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoContaduria;
+        this.copyPaste(this.datosAlmacenados.archivoTemp);
+        window.open(urlBusqueda, '_blank');
       } 
       
     }
