@@ -424,7 +424,8 @@
     background-color: transparent;
     border: none;
     cursor:pointer;
-    font-size: 30px;
+    font-size: 18px;
+    margin:5px;
 
   }
   </style>
