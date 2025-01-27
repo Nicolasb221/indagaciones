@@ -239,7 +239,6 @@
           archivoOff: `${this.iniciales} - Google - Offshoreleaks`,
           archivoWc: `${this.iniciales} - WC`,
           archivoContaduria: `${this.iniciales} - Contaduría`,
-          archivoTemp: '',
 
 
         };
@@ -386,10 +385,11 @@
       },
 
       Linkedin() {
-        const archivoLinkedin = this.datosAlmacenados.archivoLinkedin;
+  
         const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Linkedin`;
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
-        this.copiarLinkedin(archivoLinkedin)
+        const archivoTemp = this.datosAlmacenados.archivoLinkedin;
+        this.copiarLinkedin(archivoTemp)
         window.open(urlBusqueda, '_blank');
       },
       Pep() {
