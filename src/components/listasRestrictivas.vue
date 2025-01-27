@@ -423,7 +423,8 @@
     color:var(--color-azul-kp);
     background-color: transparent;
     border: none;
-    cursor:pointer
+    cursor:pointer;
+    font-size: 30px;
 
   }
   </style>
