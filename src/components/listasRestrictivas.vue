@@ -89,9 +89,6 @@
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Contaduria">Contaduría</button>
             </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Contaduria">Contaduría</button>
-            </div>
           </div>
         </div>
       </div>
