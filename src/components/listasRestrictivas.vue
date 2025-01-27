@@ -398,7 +398,8 @@
     max-width: 100%;
   }
   .container-bot{
-    display: inline-flex;
+    display: flex;
+    flex-flow: row wrap;
     flex-direction: column;
     margin: 5px;
     padding: 5px;
