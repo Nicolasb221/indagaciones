@@ -391,6 +391,8 @@
   .botonbusqueda{
     width: 50%;
     height: 20px;
-    color: transparent;
+    color: #483698;
+    background-color: transparent;
+
   }
   </style>
