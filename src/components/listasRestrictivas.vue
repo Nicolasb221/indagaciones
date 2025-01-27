@@ -253,13 +253,6 @@
       },
       copy(texto) {
         navigator.clipboard.writeText(texto)
-          .then(() => {
-            alert('Texto copiado al portapapeles');
-          })
-          .catch(err => {
-            console.error('Error al copiar al portapapeles: ', err);
-            alert('Hubo un error al copiar el texto');
-          });
       },
 
       copiarLinkedin() {
