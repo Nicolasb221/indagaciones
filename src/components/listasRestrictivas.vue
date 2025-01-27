@@ -398,7 +398,7 @@
     max-width: 100%;
   }
   .container-bot{
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     margin: 5px;
     padding: 5px;
@@ -415,7 +415,7 @@
 
   }
   .botonbusqueda{
-    width: 50%;
+    width: 100%;
     height: 20px;
     color:var(--color-azul-kp);
     background-color: transparent;
