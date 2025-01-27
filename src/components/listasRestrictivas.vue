@@ -239,6 +239,7 @@
           archivoOff: `${this.iniciales} - Google - Offshoreleaks`,
           archivoWc: `${this.iniciales} - WC`,
           archivoContaduria: `${this.iniciales} - Contaduría`,
+          archivoTemp: '',
 
 
         };
