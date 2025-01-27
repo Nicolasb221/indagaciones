@@ -325,7 +325,7 @@
     background-color: #DBDBDB;
 
   }
-  .titulo{font-size: 50px;text-align: center;color:#483698;}
+  .titulo{font-size: 50px;text-align: center;color:#313182;}
   .container-inputs{
     position: relative;
     width: 100%;
