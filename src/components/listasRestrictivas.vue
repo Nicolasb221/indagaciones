@@ -400,8 +400,8 @@
   .container-bot{
     display: flex;
     flex-direction: column;
-    margin: 20px;
-    padding: 20px;
+    margin: 5px;
+    padding: 5px;
     border-radius: 15px;
     border: 8px solid var(--color-azul-morado);
     background: linear-gradient(135deg, var(--color-gradiente-inicio), var(--color-gradiente-fin));
