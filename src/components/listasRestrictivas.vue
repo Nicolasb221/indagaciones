@@ -368,6 +368,7 @@
 
   .container-datos{
     display: flex ;
+    max-width: 900px;
     width: 80%;
     font-family: 'Bubbler One', sans-serif;
     flex-direction: column;
