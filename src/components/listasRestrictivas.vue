@@ -379,6 +379,13 @@
     display:flex;
     flex-direction: column;
     margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 8px solid var(--color-azul-morado);
+    background: linear-gradient(135deg, var(--color-gradiente-inicio), var(--color-gradiente-fin));
+    backdrop-filter: blur(10px);
+    box-shadow: 0 10px 20px var(--color-azul-morado);
+    background-color: #DBDBDB;
   }
   .titulo2{font-size: 50px;font-family: 'Anton', sans-serif;text-align: center;color:var(--color-azul-kp);margin:10px;}
 
