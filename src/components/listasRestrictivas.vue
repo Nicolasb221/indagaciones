@@ -387,7 +387,7 @@
     box-shadow: 0 10px 20px var(--color-azul-morado);
     background-color: #DBDBDB;
   }
-  .titulo2{font-size: 50px;font-family: 'Anton', sans-serif;text-align: center;color:var(--color-azul-kp);margin:10px;}
+  .titulo2{font-size: 50px;font-family: 'Anton', sans-serif;text-align: center;color:var(--color-azul-kp);margin:0px;}
 
   .parrafo{margin: 0;padding: 0;}
 
