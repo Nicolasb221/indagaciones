@@ -320,8 +320,9 @@
     border-radius: 15px;
     border: 8px solid var(--color-azul-kp);
     background: linear-gradient(135deg, var(--color-gradiente-inicio), var(--color-gradiente-fin));
-    backdrop-filter: blur(100px);
-    box-shadow: 0 4px 60px var(--color-sombra);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px var(--color-sombra);
+    background-color: rgba(255, 255, 255, 0.2);
 
   }
   .titulo{font-size: 50px;text-align: center;color:#483698;}
