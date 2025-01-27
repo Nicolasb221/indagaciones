@@ -301,6 +301,10 @@
   :root{
     --color-azul-kp : #483698;
     --color-validate : #11ac18;
+    --color-gradiente-inicio: rgba(255, 255, 255, 0.1);
+    --color-gradiente-fin: rgba(255, 255, 255, 0.3);
+    --color-borde: rgba(255, 255, 255, 0.2);
+    --color-sombra: rgba(0, 0, 0, 0.1);
   }
   .box-container {
     width: 70%;
@@ -320,9 +324,11 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    border: 2px solid #483698;
+    border-radius: 15px;
+    border: 1px solid var(--color-borde);
+    background: linear-gradient(135deg, var(--color-gradiente-inicio), var(--color-gradiente-fin));
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px var(--color-sombra);
 
   }
   .titulo{font-size: 50px;text-align: center;color:#483698;}
@@ -399,7 +405,7 @@
   .botonbusqueda{
     width: 50%;
     height: 20px;
-    color: ;
+    color: #483698;
     background-color: transparent;
     border: none;
     cursor:pointer
