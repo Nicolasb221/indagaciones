@@ -10,7 +10,7 @@
         </div>
         <br><br>
         <div class="boton-cargar">
-          <fa @click="almacenarDatos" :icon="['fas', 'circle-right']" size="2xl" style="cursor: pointer;color: var(--color-azul-kp);"/>
+          <fa @click="almacenarDatos" :icon="['fas', 'circle-right']" size="3xl" style="cursor: pointer;color: var(--color-azul-kp);"/>
         </div>
       </form>
       <div class="container-datos" v-if="datosAlmacenados">
