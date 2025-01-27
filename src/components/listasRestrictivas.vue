@@ -398,7 +398,7 @@
     max-width: 100%;
   }
   .container-bot{
-    display: inline-flex;
+    display: inline-block;
     flex-direction: column;
     margin: 5px;
     padding: 5px;
