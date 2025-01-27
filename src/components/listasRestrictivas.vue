@@ -1,5 +1,4 @@
 <template>
-
     <div class="box-container">
       <form v-if="formularioVisible" @submit.prevent="almacenarDatos" class="container-formulario">
         <label for="nombre" class="titulo">Indagacion Terceros</label><br>
@@ -299,6 +298,10 @@
   };
   </script>
   <style scoped>
+  :root{
+    --color-azul-kp : #483698;
+    --color-validate : #11ac18;
+  }
   .box-container {
     width: 70%;
     height: 70%;
@@ -316,6 +319,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding: 20px;
   }
   .titulo{font-size: 50px;text-align: center;color:#483698;}
   .container-inputs{
@@ -391,7 +395,7 @@
   .botonbusqueda{
     width: 50%;
     height: 20px;
-    color: #11ac18;
+    color: ;
     background-color: transparent;
     border: none;
     cursor:pointer
