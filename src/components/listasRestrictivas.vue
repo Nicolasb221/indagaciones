@@ -410,7 +410,7 @@
     background-color: #DBDBDB;
   }
   .container-bot-b{
-    display: flex;
+    display: inline-flex;
     justify-content: center;
 
   }
