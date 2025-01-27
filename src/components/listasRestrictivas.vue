@@ -411,7 +411,7 @@
     background-color: #DBDBDB;
   }
   .container-bot-b{
-    display: inline-block;
+    display: flex;
     justify-content: center;    
     width: 50%;
     height: 20px;
