@@ -394,6 +394,7 @@
   .container-buttons{
     display:flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
     max-width: 100%;
   }
   .container-bot{
