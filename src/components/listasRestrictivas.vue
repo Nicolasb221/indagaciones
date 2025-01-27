@@ -413,7 +413,7 @@
   .container-bot-b{
     display: flex;
     justify-content: center;    
-    width: 50%;
+    width: 30%;
     height: 20px;
 
   }
