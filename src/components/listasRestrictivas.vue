@@ -418,8 +418,6 @@
 
   }
   .botonbusqueda{
-    width: 50%;
-    height: 20px;
     color:var(--color-azul-kp);
     background-color: transparent;
     border: none;
