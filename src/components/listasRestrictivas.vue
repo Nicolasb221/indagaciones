@@ -412,7 +412,9 @@
   }
   .container-bot-b{
     display: inline-block;
-    justify-content: center;
+    justify-content: center;    
+    width: 50%;
+    height: 20px;
 
   }
   .botonbusqueda{
