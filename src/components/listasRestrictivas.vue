@@ -409,7 +409,6 @@
   }
   .container-bot{
     display: flex;
-    min-width: 150px initial !important;
     flex-direction: column;
     margin: 5px;
     padding: 5px;
@@ -426,6 +425,7 @@
   }
   .botonbusqueda{
     color:var(--color-azul-kp);
+    min-width: 150px;
     background-color: transparent;
     border: none;
     cursor:pointer;
