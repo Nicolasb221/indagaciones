@@ -172,6 +172,13 @@
                 <fa @click="copiarContaduria" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
               </div>
             </div>
+            <div class="container-bot-b">
+              <button class="botonbusqueda" @click="Contaduria">Contaduría</button>
+              <div class="container-siglas">
+                <p class = siglas>{{ datosAlmacenados.archivoContaduria}}</p>
+                <fa @click="copiarContaduria" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
+              </div>
+            </div>
           </div>
 
         </div>
@@ -387,6 +394,10 @@
       Linkedin() {
       const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Linkedin`;
       const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
+      if (this.datosAlmacenados && this.datosAlmacenados.archivoLinkedin) {
+          const texto = this.datosAlmacenados.archivoLinkedin;
+          this.copy(texto);
+        }
       window.open(urlBusqueda, '_blank');
       },
       Pep() {
