@@ -16,7 +16,6 @@
       <div class="container-datos" v-if="datosAlmacenados">
         <div class="container-datos-i">
           <h3 class="titulo2">Tercero</h3>
-
           <p class="parrafo"><strong>Nombres:</strong> {{ datosAlmacenados.valorN}}</p>
           <p class="parrafo"><strong>Apellidos:</strong> {{ datosAlmacenados.apellidosSS}}</p>
           <p class="parrafo"><strong>Cédula de ciudadanía:</strong> {{ datosAlmacenados.documentoId}}</p>
@@ -325,7 +324,7 @@
     background-color: #DBDBDB;
 
   }
-  .titulo{font-size: 50px;text-align: center;color:var(--color-azul-kp);}
+  .titulo{font-size: 50px;font-family: 'Anton', sans-serif; text-align: center;color:var(--color-azul-kp);}
   .container-inputs{
     position: relative;
     width: 100%;
