@@ -24,6 +24,7 @@
     --color-gradiente-fin2: rgba(255, 255, 255, 0);
     --color-borde: rgba(255, 255, 255, 0.2);
     --color-sombra: rgba(0, 0, 0, 0.1);
+    --color-border-box-boton: #A4A4EB;
   }
   body{
     margin-top: 60px;
