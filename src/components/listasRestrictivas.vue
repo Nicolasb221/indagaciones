@@ -380,7 +380,7 @@
     flex-direction: column;
     margin: 20px;
   }
-  .titulo2{font-size: 50px;text-align: center;color:var(--color-azul-kp);margin:10px;}
+  .titulo2{font-size: 50px;font-family: 'Anton', sans-serif;text-align: center;color:var(--color-azul-kp);margin:10px;}
 
   .parrafo{margin: 0;padding: 0;}
 
