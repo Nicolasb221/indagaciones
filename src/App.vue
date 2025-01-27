@@ -17,7 +17,7 @@
     --color-azul-morado: #4f4f9E;
     --color-morado-claro: #626282;
     --color-validate : #11ac18;
-    --color-gradiente-inicio: rgba(255, 255, 255, 0.1);
+    --color-gradiente-inicio: rgba(4, 0, 251, 0.131);
     --color-gradiente-fin: rgba(255, 255, 255, 0.3);
     --color-borde: rgba(255, 255, 255, 0.2);
     --color-sombra: rgba(0, 0, 0, 0.1);
