@@ -338,13 +338,13 @@
   .input-container-input{
     display: flex;
     flex-grow: wrap;
-    color: var(--color-azul-kp);
+    color: var(--color-morado-claro2);
     font-family: 'Bubbler One', sans-serif;
     font-size: 15px;
     padding: 10px;
     border: none;
     border-radius: 10px;
-    outline: 2px solid var(--color-azul-kp);
+    outline: 2px solid var(--color-morado-claro);
     background-color: transparent;
     transition: outline-color 500ms;
     margin: 20px;
