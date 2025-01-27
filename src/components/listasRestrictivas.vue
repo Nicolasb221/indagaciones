@@ -322,7 +322,7 @@
     background: linear-gradient(135deg, var(--color-gradiente-inicio), var(--color-gradiente-fin));
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px var(--color-sombra);
-    background-color: rgba(0, 0, 0, 0.293);
+    background-color: #DBDBDB;
 
   }
   .titulo{font-size: 50px;text-align: center;color:#483698;}
