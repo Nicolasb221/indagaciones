@@ -348,12 +348,12 @@
     border-bottom: 2px solid var(--color-morado-claro2);
     background: linear-gradient(0deg, var(--color-morado-clarot), var(--color-gradiente-fin2));
     margin: 20px;
-    transition: background 3s ease-in, border-bottom-color 3s ease ease-in;
+    transition: border-bottom-color 3s ease-in;
   }
   .input-container-input:focus{
     background: linear-gradient(0deg, var(--color-morado-clarot), var(--color-gradiente-fin));
     border-bottom: 2px solid var(--color-azul-kp);
-    transition: background 3s ease-out, border-bottom-color 3s ease ease-out;
+    transition: border-bottom-color 3s ease-out;
   }
   .input-container-input::placeholder{
     color:var(--color-azul-kp);
