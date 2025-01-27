@@ -255,7 +255,7 @@
         navigator.clipboard.writeText(texto)
       },
 
-      copiarLinkedin(archivoTemp) {
+      copiar2(archivoTemp) {
         if (archivoTemp) {
           const texto = this.datosAlmacenados.archivoTemp;
           this.copy(texto);
@@ -389,12 +389,14 @@
         const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Linkedin`;
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoLinkedin;
-        this.copiarLinkedin(this.datosAlmacenados.archivoTemp);
+        this.copiar2(this.datosAlmacenados.archivoTemp);
         window.open(urlBusqueda, '_blank');
       },
       Pep() {
       const consulta = `${this.datosAlmacenados.documentoId}`;
       const urlBusqueda = `https://www.funcionpublica.gov.co/fdci/consultaCiudadana/consultaPEP?tipoRegistro=0&numeroDocumento=${encodeURIComponent(consulta)}&primerNombre=&segundoNombre=&primerApellido=&segundoApellido=&entidad=&dpto=&mun=&find=Buscar#resultadosBusqueda`;
+      this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoPEP;
+      this.copiar2(this.datosAlmacenados.archivoTemp);
       window.open(urlBusqueda, '_blank');
       },
       Informa() {
