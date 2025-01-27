@@ -344,9 +344,9 @@
     padding: 10px;
     border: none;
     border-radius: 10px;
-    outline: 2px solid var(--color-morado-claro);
+    outline: none;
+    border-bottom: 2px solid var(--color-morado-claro);
     background-color: transparent;
-    transition: outline-color 500ms;
     margin: 20px;
 
   }
