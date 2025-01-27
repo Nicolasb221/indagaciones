@@ -325,7 +325,7 @@
     justify-content: space-evenly;
     padding: 20px;
     border-radius: 15px;
-    border: 4px solid var(--color-azul-kp);
+    border: 4px solid #483698;
     background: linear-gradient(135deg, var(--color-gradiente-inicio), var(--color-gradiente-fin));
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px var(--color-sombra);
