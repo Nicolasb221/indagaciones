@@ -1,9 +1,8 @@
 <template>
-  <div class="main">
+  <div class="main"></div>
     <div class="container">
       <listasRestrictivas/>
     </div>
-  </div>
 </template>
 
 <script setup>
