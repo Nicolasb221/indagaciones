@@ -48,7 +48,7 @@
           </div>
           <div class="container-bot">
             <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Corrupccion">Corrupcción</button>
+              <button class="botonbusqueda" @click="Corrupcion">Corrupción</button>
               <div class="container-siglas">
                 <p class = siglas>{{ datosAlmacenados.archivoCorrupcion}}</p>
                 <fa @click="copiarCorrupcion" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
@@ -165,6 +165,13 @@
                 <fa @click="copiarWc" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
               </div>
             </div>
+            <div class="container-bot-b">
+              <button class="botonbusqueda" @click="Contaduria">Contaduría</button>
+              <div class="container-siglas">
+                <p class = siglas>{{ datosAlmacenados.archivoContaduria}}</p>
+                <fa @click="copiarContaduria" :icon="['far', 'copy']" size="xs" style="cursor: pointer;color: #ffffff;" />
+              </div>
+            </div>
           </div>
 
         </div>
@@ -224,6 +231,8 @@
           archivoRj: `${this.iniciales} - Rama Judicial`,
           archivoOff: `${this.iniciales} - Google - Offshoreleaks`,
           archivoWc: `${this.iniciales} - WC`,
+          archivoContaduria: `${this.iniciales} - Contaduría`,
+
 
         };
 
@@ -337,14 +346,14 @@
         }
       },
       copiarTruora() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoSs) {
-          const texto = this.datosAlmacenados.archivoSs;
+        if (this.datosAlmacenados && this.datosAlmacenados.archivoTruora) {
+          const texto = this.datosAlmacenados.archivoTruora;
           this.copy(texto);
         }
       },
       copiarRj() {
-        if (this.datosAlmacenados && this.datosAlmacenados.archivoTruora) {
-          const texto = this.datosAlmacenados.archivoTruora;
+        if (this.datosAlmacenados && this.datosAlmacenados.archivoRj) {
+          const texto = this.datosAlmacenados.archivoRj;
           this.copy(texto);
         }
       },
@@ -360,6 +369,13 @@
           this.copy(texto);
         }
       },
+      copiarContaduria() {
+        if (this.datosAlmacenados && this.datosAlmacenados.archivoContaduria) {
+          const texto = this.datosAlmacenados.archivoContaduria;
+          this.copy(texto);
+        }
+      },
+
       obtenerIniciales(cadena){
         return cadena
           .split(' ')
@@ -379,11 +395,11 @@
       window.open(urlBusqueda, '_blank');
       },
       Informa() {
-      const urlBusqueda = `https://www.informacolombia.com/`;
+      const urlBusqueda = `https://www.informacolombia.com/InformaIntWeb/Main/id_sess/00081623158000034624480000041879/idioma/01/activa/2/id_tmp/974.0/prod/VINCULACIONES_RESULTADO_CONTEO/prod_desde/BUSCADOR_VINCULACIONES`;
       window.open(urlBusqueda, '_blank');
       },  
-      Corrupccion() {
-      const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Corrupcción`;
+      Corrupcion() {
+      const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Corrupción`;
       const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
       window.open(urlBusqueda, '_blank');
       },
@@ -443,7 +459,7 @@
       window.open(urlBusqueda, '_blank');
       },    
       Truora() {
-      const urlBusqueda = `https://www.truora.com/es/https://www.truora.com/es/`;
+      const urlBusqueda = `https://checks.truora.com/#/dashboard/check/custom`;
       window.open(urlBusqueda, '_blank');
       },    
       Ramajudicial() {
@@ -457,6 +473,10 @@
       }, 
       Wc() {
       const urlBusqueda = `https://members.worldcompliance.com/SignIn.aspx`;
+      window.open(urlBusqueda, '_blank');
+      },
+      Contaduria() {
+      const urlBusqueda = `https://eris.contaduria.gov.co/BDME/#`;
       window.open(urlBusqueda, '_blank');
       } 
       
@@ -473,7 +493,7 @@
     justify-content: space-evenly;
     justify-items: center;
     align-items: center;
-    border: 1px solid #ddd;
+    
     border-radius: 8px;
   }
   input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;}
@@ -549,7 +569,6 @@
   .container-bot{
     display: flex;
     flex-direction: column;
-    border:2px #ffffff;
     margin: 10px;
   }
   .container-siglas{
