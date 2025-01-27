@@ -393,6 +393,7 @@
     height: 20px;
     color: #483698;
     background-color: transparent;
+    border: none;
 
   }
   </style>
