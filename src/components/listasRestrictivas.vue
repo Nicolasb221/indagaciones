@@ -10,7 +10,7 @@
         </div>
         <br><br>
         <div class="boton-cargar">
-          <fa @click="almacenarDatos" :icon="['fas', 'circle-right']" size="3xl" style="cursor: pointer;color: var(--color-azul-kp);"/>
+          <fa @click="almacenarDatos" :icon="['fas', 'circle-right']" size="2xl" style="cursor: pointer;color: var(--color-azul-kp);"/>
         </div>
       </form>
       <div class="container-datos" v-if="datosAlmacenados">
@@ -348,12 +348,12 @@
     border-bottom: 2px solid var(--color-morado-claro2);
     background: linear-gradient(0deg, var(--color-morado-clarot), var(--color-gradiente-fin2));
     margin: 20px;
-    transition: background 1s ease-in, border-bottom-color 1s ease ease-in;
+    transition: background 3s ease-in, border-bottom-color 3s ease ease-in;
   }
   .input-container-input:focus{
     background: linear-gradient(0deg, var(--color-morado-clarot), var(--color-gradiente-fin));
     border-bottom: 2px solid var(--color-azul-kp);
-    transition: background 1s ease-out, border-bottom-color 1s ease ease-out;
+    transition: background 3s ease-out, border-bottom-color 3s ease ease-out;
   }
   .input-container-input::placeholder{
     color:var(--color-azul-kp);
