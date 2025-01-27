@@ -394,8 +394,10 @@
   .container-buttons{
     display:flex;
     flex-flow: row wrap;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
     justify-content: space-evenly;
-    max-width: 100%;
     border: 8px solid var(--color-azul-morado);
   }
   .container-bot{
