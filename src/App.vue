@@ -15,6 +15,7 @@
     --color-fondo-n : #FFFFFF;
     --color-azul-kp : #313182;
     --color-azul-morado: #4f4f9E;
+    --color-morado-claro: #626282;
     --color-validate : #11ac18;
     --color-gradiente-inicio: rgba(255, 255, 255, 0.1);
     --color-gradiente-fin: rgba(255, 255, 255, 0.3);
