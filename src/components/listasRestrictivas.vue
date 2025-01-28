@@ -67,6 +67,7 @@
             </div>
           </div>
           <div class="container-bot">
+            <div class="container-clases"><div class="container-icon"><fa :icon="['fas', 'hashtag']" style="color: var(--color-azul-kp);" /></div><div class="titulo-clase">REDES</div></div>
             <div class="container-bot-b" @click="Facebook">
               <div class="container-icon"><fa :icon="['fab', 'square-facebook']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Facebook</div>
@@ -104,6 +105,7 @@
             </div>
           </div>
           <div class="container-bot">
+            <div class="container-clases"><div class="container-icon"><fa :icon="['fas', 'scale-unbalanced-flip']" style="color: var(--color-azul-kp);" /></div><div class="titulo-clase">LEGAL</div></div>
             <div class="container-bot-b" @click="Truora">
               <div class="container-icon"><fa :icon="['far', 'folder-open']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Truora</div>
