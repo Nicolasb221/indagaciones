@@ -26,8 +26,10 @@
               <div class="botonbusqueda" >Linkedin</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Pep">PEP</button>
+            <div class="container-bot-b" @click="Pep">
+              <fa :icon="['fas', 'bullhorn']" style="color: var(--color-azul-kp);" />
+              <button class="botonbusqueda">PEP</button>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Informa">Informa</button>
