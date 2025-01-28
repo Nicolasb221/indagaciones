@@ -21,9 +21,9 @@
         </div>
         <div class="container-buttons">
           <div class="container-bot">
-            <div class="container-bot-b">
+            <div class="container-bot-b" @click="Linkedin">
               <fa :icon="['fab', 'linkedin']" style="color: var(--color-azul-kp);" />
-              <button class="botonbusqueda" @click="Linkedin">Linkedin</button>
+              <button class="botonbusqueda" >Linkedin</button>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b">
@@ -420,13 +420,13 @@
     display: flex;
     justify-content: center;
     align-items: center;    
+    cursor:pointer;
   }
   .botonbusqueda{
     color:var(--color-azul-kp);
     min-width: 90px;
     background-color: transparent;
     border: none;
-    cursor:pointer;
     font-size: 14px;
     margin:5px;
     font-family: 'Bubbler One', sans-serif;
