@@ -425,7 +425,7 @@
     justify-content: space-between;
     align-items: center;    
     cursor:pointer;
-    min-width: 110px;
+    min-width: 125px;
     height: 30px;
   }
   .botonbusqueda{
