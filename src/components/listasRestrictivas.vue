@@ -40,7 +40,7 @@
               <button class="botonbusqueda" @click="Narcotrafico">Narcotráfico</button>
             </div>
             <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Lavado()">Lavado de</button>
+              <button class="botonbusqueda" @click="Lavado">Lavado de</button>
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Fraude">Fraude</button>
@@ -363,6 +363,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-height: 32px;
   }
   .b-botoncargar{width: 10%;}
 
