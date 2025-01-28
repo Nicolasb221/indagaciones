@@ -490,7 +490,7 @@
 
   .container-clases{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 35px;
     width: 150px;
@@ -514,7 +514,7 @@
   }
   .container-icon{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: 30px;
     width: 30px;
