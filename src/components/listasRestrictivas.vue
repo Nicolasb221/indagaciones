@@ -418,10 +418,10 @@
   }
   .container-bot-b{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;    
     cursor:pointer;
-    min-width: 100px;
+    min-width: 110px;
   }
   .botonbusqueda{
     display: flex;
