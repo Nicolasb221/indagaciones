@@ -399,7 +399,7 @@
     max-width: 900px;
     flex-flow: row wrap;
     margin: 20px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 15px;
     border: 8px solid var(--color-azul-morado);
     background: linear-gradient(135deg, var(--color-gradiente-inicio), var(--color-gradiente-fin));
