@@ -476,6 +476,7 @@
   .container-buttons{
     display:flex;
     max-width: 1200px;
+    min-width: 838px;
     flex-flow: nowrap;
     margin: 20px;
     padding: 10px;
