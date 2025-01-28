@@ -22,7 +22,7 @@
         <div class="container-buttons">
           <div class="container-bot">
             <div class="container-bot-b" @click="Linkedin">
-              <fa :icon="['fab', 'linkedin']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fab', 'linkedin']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda" >Linkedin</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout" />
             </div>
@@ -477,6 +477,13 @@
     font-size: 14px;
     font-family: 'Bubbler One', sans-serif;
     transition: color .3s ease-in, font-weight .3s ease-in, font-size .3s ease-in;
+  }
+  .container-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
   }
   .botonbusqueda:hover{
     color: var(--color-azul-morado);
