@@ -27,103 +27,103 @@
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout" />
             </div>
             <div class="container-bot-b" @click="Pep">
-              <fa :icon="['fas', 'bullhorn']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"></div><fa :icon="['fas', 'bullhorn']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">PEP</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b" @click="Informa">
-              <fa :icon="['fas', 'users-between-lines']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"></div><fa :icon="['fas', 'users-between-lines']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Informa</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
           </div>
           <div class="container-bot">
             <div class="container-bot-b" @click="Corrupcion">
-              <fa :icon="['fas', 'comments-dollar']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'comments-dollar']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Corrupción</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b" @click="Narcotrafico">
-              <fa :icon="['fas', 'person-rifle']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'person-rifle']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Narcotráfico</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b" @click="Lavado">
-              <fa :icon="['fas', 'sack-dollar']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'sack-dollar']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Lavado de</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b">
-              <fa :icon="['fas', 'magnifying-glass-dollar']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'magnifying-glass-dollar']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda" @click="Fraude">Fraude</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b" @click="Facesearch">
-              <fa :icon="['fas', 'user-secret']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'user-secret']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Facesearch</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
           </div>
           <div class="container-bot">
             <div class="container-bot-b" @click="Facebook">
-              <fa :icon="['fab', 'square-facebook']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fab', 'square-facebook']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Facebook</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b" @click="Instagram">
-              <fa :icon="['fab', 'square-instagram']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fab', 'square-instagram']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Instagram</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b" @click="TikTok">
-              <fa :icon="['fab', 'tiktok']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fab', 'tiktok']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">TikTok</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b" @click="Pinterest">
-              <fa :icon="['fab', 'pinterest']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fab', 'pinterest']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Pinterest</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b" @click="Twitter">
-              <fa :icon="['fab', 'square-x-twitter']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fab', 'square-x-twitter']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">X</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b" @click="Youtube">
-              <fa :icon="['fab', 'square-youtube']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fab', 'square-youtube']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Youtube</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b" @click="Socialsearch">
-              <fa :icon="['fas', 'users']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'users']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Social search</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
           </div>
           <div class="container-bot">
             <div class="container-bot-b" @click="Truora">
-              <fa :icon="['far', 'folder-open']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['far', 'folder-open']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Truora</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b" @click="Ramajudicial">
-              <fa :icon="['fas', 'gavel']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'gavel']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Rama judicial</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b" @click="Offshoreleaks">
-              <fa :icon="['fas', 'magnifying-glass']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'magnifying-glass']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Offshoreleaks</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b" @click="Wc">
-              <fa :icon="['fas', 'handcuffs']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'handcuffs']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Wc</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b" @click="Contaduria">
-              <fa :icon="['fas', 'money-bill-transfer']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'money-bill-transfer']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Contaduría</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
