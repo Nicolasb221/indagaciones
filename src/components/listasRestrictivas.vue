@@ -28,7 +28,7 @@
             </div>
             <div class="container-bot-b" @click="Pep">
               <fa :icon="['fas', 'bullhorn']" style="color: var(--color-azul-kp);" />
-              <button class="botonbusqueda">PEP</button>
+              <div class="botonbusqueda">PEP</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b">
