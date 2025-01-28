@@ -21,119 +21,130 @@
         </div>
         <div class="container-buttons">
           <div class="container-bot">
+            <div class="container-clases"><div class="container-icon"><fa :icon="['fas', 'eye']" style="color: var(--color-azul-kp);" /></div><div class="titulo-clase">IDENTIFICACIÓN</div></div>
             <div class="container-bot-b" @click="Linkedin">
-              <fa :icon="['fab', 'linkedin']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fab', 'linkedin']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda" >Linkedin</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[0]" />
             </div>
             <div class="container-bot-b" @click="Pep">
-              <fa :icon="['fas', 'bullhorn']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'bullhorn']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">PEP</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[1]"/>
             </div>
             <div class="container-bot-b" @click="Informa">
-              <fa :icon="['fas', 'users-between-lines']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'users-between-lines']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Informa</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[2]"/>
             </div>
+            <div class="container-clases-2"><div class="container-icon"><fa :icon="['fas', 'circle-question']" style="color: var(--color-azul-kp);" /></div><div class="titulo-clase-2">¿Tiene vinculaciones societarias?</div></div>
+            <div class="container-clases-3"><div class="container-icon-b" @click="Tvsocietarias"><fa :icon="['fas', 'check']" style="color: var(--color-azul-kp);" /></div></div>
           </div>
           <div class="container-bot">
+            <div class="container-clases"><div class="container-icon"><fa :icon="['fas', 'user-shield']" style="color: var(--color-azul-kp);" /></div><div class="titulo-clase">INTEGRIDAD</div></div>
             <div class="container-bot-b" @click="Corrupcion">
-              <fa :icon="['fas', 'comments-dollar']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'comments-dollar']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Corrupción</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[3]"/>
             </div>
             <div class="container-bot-b" @click="Narcotrafico">
-              <fa :icon="['fas', 'person-rifle']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'person-rifle']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Narcotráfico</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[4]"/>
             </div>
             <div class="container-bot-b" @click="Lavado">
-              <fa :icon="['fas', 'sack-dollar']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'sack-dollar']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Lavado de</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[5]"/>
             </div>
             <div class="container-bot-b">
-              <fa :icon="['fas', 'magnifying-glass-dollar']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'magnifying-glass-dollar']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda" @click="Fraude">Fraude</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[6]"/>
             </div>
             <div class="container-bot-b" @click="Facesearch">
-              <fa :icon="['fas', 'user-secret']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'user-secret']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Facesearch</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[7]"/>
             </div>
           </div>
           <div class="container-bot">
+            <div class="container-clases"><div class="container-icon"><fa :icon="['fas', 'hashtag']" style="color: var(--color-azul-kp);" /></div><div class="titulo-clase">REDES</div></div>
             <div class="container-bot-b" @click="Facebook">
-              <fa :icon="['fab', 'square-facebook']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fab', 'square-facebook']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Facebook</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[8]"/>
             </div>
             <div class="container-bot-b" @click="Instagram">
-              <fa :icon="['fab', 'square-instagram']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fab', 'square-instagram']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Instagram</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[9]"/>
             </div>
             <div class="container-bot-b" @click="TikTok">
-              <fa :icon="['fab', 'tiktok']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fab', 'tiktok']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">TikTok</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[10]"/>
             </div>
             <div class="container-bot-b" @click="Pinterest">
-              <fa :icon="['fab', 'pinterest']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fab', 'pinterest']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Pinterest</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[11]"/>
             </div>
             <div class="container-bot-b" @click="Twitter">
-              <fa :icon="['fab', 'square-x-twitter']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fab', 'square-x-twitter']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">X</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[12]"/>
             </div>
             <div class="container-bot-b" @click="Youtube">
-              <fa :icon="['fab', 'square-youtube']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fab', 'square-youtube']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Youtube</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[13]"/>
             </div>
             <div class="container-bot-b" @click="Socialsearch">
-              <fa :icon="['fas', 'users']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'users']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Social search</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[14]"/>
             </div>
           </div>
           <div class="container-bot">
+            <div class="container-clases"><div class="container-icon"><fa :icon="['fas', 'scale-unbalanced-flip']" style="color: var(--color-azul-kp);" /></div><div class="titulo-clase">LEGAL</div></div>
             <div class="container-bot-b" @click="Truora">
-              <fa :icon="['far', 'folder-open']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['far', 'folder-open']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Truora</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[15]"/>
             </div>
             <div class="container-bot-b" @click="Ramajudicial">
-              <fa :icon="['fas', 'gavel']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'gavel']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Rama judicial</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[16]"/>
             </div>
             <div class="container-bot-b" @click="Offshoreleaks">
-              <fa :icon="['fas', 'magnifying-glass']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'magnifying-glass']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Offshoreleaks</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[17]"/>
             </div>
             <div class="container-bot-b" @click="Wc">
-              <fa :icon="['fas', 'handcuffs']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'handcuffs']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Wc</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[18]"/>
             </div>
             <div class="container-bot-b" @click="Contaduria">
-              <fa :icon="['fas', 'money-bill-transfer']" style="color: var(--color-azul-kp);" />
+              <div class="container-icon"><fa :icon="['fas', 'money-bill-transfer']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Contaduría</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[19]"/>
             </div>
           </div>
+        </div>
+        <div class="container-datos-i" v-show="datosAlmacenados.flagVs">
+          <input type="text" class="input-container-input" id="nombre" v-model="nombrEmpresa" placeholder="Ingrese el nombre de la empresa" required>
         </div>
       </div>
     </div>
   </template>
   
   <script>
+
+  
   export default {
     name: "listasRestrictivas",
     data() {
@@ -143,6 +154,7 @@
         datosAlmacenados: null,
         formularioVisible: true,
         iniciales: '',
+        nombrEmpresa:'',
       };
     },
     methods: {
@@ -177,11 +189,15 @@
           archivoWc: `${this.iniciales} - WC`,
           archivoContaduria: `${this.iniciales} - Contaduría`,
           archivoTemp: '',
+          flagCheckout: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+          flagVs: 0,
+          nombreEmpresas:this.nombrEmpresa,
         };
         this.formularioVisible = false;
         this.nombre = '';
         this.apellidos = '';
         this.documento = '';
+        this.nombrEmpresa = '';
       },
       copyPaste(archivoTemp) {
         if (archivoTemp) {
@@ -201,6 +217,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoLinkedin;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[0] = 1;
         window.open(urlBusqueda, '_blank');
       },
       Pep() {
@@ -208,12 +225,14 @@
         const urlBusqueda = `https://www.funcionpublica.gov.co/fdci/consultaCiudadana/consultaPEP?tipoRegistro=0&numeroDocumento=${encodeURIComponent(consulta)}&primerNombre=&segundoNombre=&primerApellido=&segundoApellido=&entidad=&dpto=&mun=&find=Buscar#resultadosBusqueda`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoPEP;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[1] = 1;
         window.open(urlBusqueda, '_blank');
       },
       Informa() {
         const urlBusqueda = `https://www.informacolombia.com/InformaIntWeb/Main/id_sess/00081623158000034624480000041879/idioma/01/activa/2/id_tmp/974.0/prod/VINCULACIONES_RESULTADO_CONTEO/prod_desde/BUSCADOR_VINCULACIONES`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoInforma;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[2] = 1;
         window.open(urlBusqueda, '_blank');
       },  
       Corrupcion() {
@@ -221,6 +240,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoCorrupcion;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[3] = 1;
         window.open(urlBusqueda, '_blank');
       },
       Narcotrafico() {
@@ -228,6 +248,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoNarcotrafico;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[4] = 1;
         window.open(urlBusqueda, '_blank');
       },
       Lavado() {
@@ -235,6 +256,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoLavado;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[5] = 1;
         window.open(urlBusqueda, '_blank');
       },
       Fraude() {
@@ -242,6 +264,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoFraude;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[6] = 1;
         window.open(urlBusqueda, '_blank');
       },
       Facesearch() {
@@ -249,6 +272,7 @@
         const urlBusqueda = `https://www.google.com/search?hl=es&tbm=isch&q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoFace;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[7] = 1;
         window.open(urlBusqueda, '_blank');
       },
       Facebook() {
@@ -256,6 +280,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoFacebook;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[8] = 1;
         window.open(urlBusqueda, '_blank');
       },   
       Instagram() {
@@ -263,6 +288,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoInstagram;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[9] = 1;
         window.open(urlBusqueda, '_blank');
       },   
       TikTok() {
@@ -270,6 +296,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoTiktok;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[10] = 1;
         window.open(urlBusqueda, '_blank');
       },   
       Pinterest() {
@@ -277,6 +304,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoPinterest;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[11] = 1;
         window.open(urlBusqueda, '_blank');
       },   
       Twitter() {
@@ -284,6 +312,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoX;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[12] = 1;
         window.open(urlBusqueda, '_blank');
       },  
       Youtube() {
@@ -291,6 +320,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoYoutube;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[13] = 1;
         window.open(urlBusqueda, '_blank');
       },
       Socialsearch() {
@@ -298,18 +328,21 @@
         const urlBusqueda = `https://www.social-searcher.com/social-buzz/?q5=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoSs;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[14] = 1;
         window.open(urlBusqueda, '_blank');
       },    
       Truora() {
         const urlBusqueda = `https://checks.truora.com/#/dashboard/check/custom`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoTruora;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[15] = 1;
         window.open(urlBusqueda, '_blank');
       },    
       Ramajudicial() {
         const urlBusqueda = `https://consultaprocesos.ramajudicial.gov.co/Procesos/NombreRazonSocial`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoRj;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[16] = 1;
         window.open(urlBusqueda, '_blank');
       }, 
       Offshoreleaks() {
@@ -317,20 +350,26 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoOff;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[17] = 1;
         window.open(urlBusqueda, '_blank');
       }, 
       Wc() {
         const urlBusqueda = `https://members.worldcompliance.com/SignIn.aspx`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoWc;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[18] = 1;
         window.open(urlBusqueda, '_blank');
       },
       Contaduria() {
         const urlBusqueda = `https://eris.contaduria.gov.co/BDME/#`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoContaduria;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[19] = 1;
         window.open(urlBusqueda, '_blank');
-      } 
+      },
+      Tvsocietarias(){
+        this.datosAlmacenados.flagVs = 1;
+      }
       
     }
   };
@@ -338,8 +377,8 @@
   <style scoped>
 
   .box-container {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     display: flex;
     position: absolute;
     justify-content: space-evenly;
@@ -410,7 +449,7 @@
   .container-datos{
     display: flex ;
     max-width: 1200px;
-    width: 90%;
+    width: 95%;
     font-family: 'Bubbler One', sans-serif;
     flex-direction: column;
     color: var(--color-azul-kp);
@@ -420,6 +459,7 @@
   .container-datos-i{
     display:flex;
     max-width: 1200px;
+    min-width: 823px;
     flex-direction: column;
     margin: 20px;
     padding: 20px;
@@ -430,14 +470,15 @@
     box-shadow: 0 10px 20px var(--color-azul-morado);
     background-color: #DBDBDB;
   }
-  .titulo2{font-size: 50px;font-family: 'Anton', sans-serif;text-align: center;color:var(--color-azul-kp);margin:0px;}
+  .titulo2{font-size: 50px;font-family: 'Anton', sans-serif;text-align: start;color:var(--color-azul-kp);margin:0px;}
 
   .parrafo{margin: 0;padding: 0;}
 
   .container-buttons{
     display:flex;
     max-width: 1200px;
-    flex-flow: row wrap;
+    min-width: 838px;
+    flex-flow: nowrap;
     margin: 20px;
     padding: 10px;
     border-radius: 15px;
@@ -453,18 +494,66 @@
     flex-direction: column;
     margin: 5px;
     padding: 5px;
+    box-shadow: -1px 5px 5px #4444ff7d;
+    background: transparent;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
   }
   .container-bot-b{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;    
     cursor:pointer;
     min-width: 135px;
     height: 30px;
   }
+
+  .container-clases{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 35px;
+    width: 180px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var( --color-azul-claro);
+    box-shadow: 0 8px 5px #4444ffd9;
+    border-radius: 30px;
+    position: relative;
+    right: 30px;
+    top: -5px
+  }
+  .container-clases-2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 35px;
+    width: 180px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .container-clases-3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 180px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  .titulo-clase{
+    font-size: 16px;
+    font-family: 'Anton', sans-serif;
+    color: var(--color-azul-kp);
+  }
+  .titulo-clase-2{
+    font-size: 16px;
+    font-family: 'Bubbler One', sans-serif;
+    color: var(--color-azul-kp);
+  }
   .botonbusqueda{
     display: flex;
     padding: 0px;
+    min-width: 95px;
     justify-content: center;
     color:var(--color-azul-kp);
     background-color: transparent;
@@ -472,6 +561,25 @@
     font-size: 14px;
     font-family: 'Bubbler One', sans-serif;
     transition: color .3s ease-in, font-weight .3s ease-in, font-size .3s ease-in;
+  }
+  .container-icon{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+  }
+  .container-icon-b{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
   }
   .botonbusqueda:hover{
     color: var(--color-azul-morado);
