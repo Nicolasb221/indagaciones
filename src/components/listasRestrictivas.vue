@@ -422,6 +422,7 @@
     align-items: center;    
     cursor:pointer;
     min-width: 110px;
+    height: 20px;
   }
   .botonbusqueda{
     display: flex;
