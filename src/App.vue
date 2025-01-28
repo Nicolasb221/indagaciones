@@ -37,7 +37,7 @@
     height: 100vh;
   }
   .container{
-    display: flex;
+    display: absolute;
     justify-content: center;
     align-items: center;
   }
