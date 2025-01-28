@@ -496,7 +496,7 @@
     width: 150px;
     margin-bottom: 10px;
     border-bottom: 1px solid var( --color-azul-claro);
-    box-shadow: 0 10px 10px #ffffffd9;
+    box-shadow: 0 10px 10px #4444ffd9;
     border-radius: 30px;
   }
   .titulo-clase{
