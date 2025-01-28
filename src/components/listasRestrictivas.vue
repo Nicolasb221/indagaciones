@@ -493,7 +493,7 @@
     justify-content: center;
     align-items: center;
     height: 35px;
-    width: 60px;
+    width: 150px;
   }
   .titulo-clase{
     font-size: 16px;
