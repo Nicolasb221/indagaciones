@@ -505,7 +505,7 @@
     box-shadow: 0 8px 10px #4444ffd9;
     border-radius: 30px;
     position: relative;
-    x: -30px;
+    right: -30px;
   }
   .titulo-clase{
     font-size: 16px;
