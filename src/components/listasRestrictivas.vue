@@ -496,7 +496,7 @@
 
   .container-clases{
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     height: 35px;
     width: 150px;
@@ -529,6 +529,7 @@
   .container-icon{
     display: flex;
     justify-content: center;
+    margin-right: 10px;
     align-items: center;
     height: 30px;
     width: 30px;
