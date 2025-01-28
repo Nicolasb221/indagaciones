@@ -135,7 +135,9 @@
             </div>
           </div>
         </div>
-        <div class="container-datos-i" v-show="datosAlmacenados.flagVs"></div>
+        <div class="container-datos-i" v-show="datosAlmacenados.flagVs">
+          <input type="text" class="input-container-input" id="nombre" v-model="nombrEmpresa" placeholder="Ingrese el nombre de la empresa" required>
+        </div>
       </div>
     </div>
   </template>
@@ -152,6 +154,7 @@
         datosAlmacenados: null,
         formularioVisible: true,
         iniciales: '',
+        nombrEmpresa:'',
       };
     },
     methods: {
@@ -188,11 +191,13 @@
           archivoTemp: '',
           flagCheckout: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
           flagVs: 0,
+          nombreEmpresas:this.nombrEmpresa,
         };
         this.formularioVisible = false;
         this.nombre = '';
         this.apellidos = '';
         this.documento = '';
+        this.nombrEmpresa = '';
       },
       copyPaste(archivoTemp) {
         if (archivoTemp) {
