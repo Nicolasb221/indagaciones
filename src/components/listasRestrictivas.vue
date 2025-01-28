@@ -427,6 +427,9 @@
     font-size: 18px;
     margin:5px;
     font-family: 'Bubbler One', sans-serif;
-
+    transition: color 1s ease-in;
+  }
+  .botonbusqueda:hover{
+    color: var(--color-azul-morado);
   }
   </style>
