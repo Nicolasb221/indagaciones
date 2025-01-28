@@ -31,8 +31,10 @@
               <div class="botonbusqueda">PEP</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Informa">Informa</button>
+            <div class="container-bot-b" @click="Informa">
+              <fa :icon="['fas', 'users-between-lines']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Informa</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
           </div>
           <div class="container-bot">
