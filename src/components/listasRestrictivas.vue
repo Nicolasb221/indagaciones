@@ -459,7 +459,7 @@
     justify-content: space-between;
     align-items: center;    
     cursor:pointer;
-    min-width: 125px;
+    min-width: 135px;
     height: 30px;
   }
   .botonbusqueda{
