@@ -8,7 +8,6 @@
           <input type="number" class="input-container-input" id="documento" v-model="documento" placeholder="Cédula de ciudadanía">
 
         </div>
-        <br><br>
         <div class="boton-cargar">
           <fa @click="almacenarDatos" :icon="['fas', 'circle-right']" size="2xl" style="cursor: pointer;color: var(--color-azul-kp);"/>
         </div>
