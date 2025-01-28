@@ -27,7 +27,7 @@
   body{
     margin-top: 60px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     background: var(--color-fondo-n);
     font-family: 'Anton', sans-serif;
     user-select: none;
