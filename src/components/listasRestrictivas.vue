@@ -310,7 +310,7 @@
   input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;}
   
   .container-formulario{
-    height: 370px;
+    height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
