@@ -420,7 +420,7 @@
   }
   .botonbusqueda{
     color:var(--color-azul-kp);
-    min-width: 100px;
+    min-width: 90px;
     background-color: transparent;
     border: none;
     cursor:pointer;
