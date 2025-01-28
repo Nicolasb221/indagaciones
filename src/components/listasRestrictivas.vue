@@ -314,7 +314,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 20px;
+    padding: 10px;
     border-radius: 15px;
     border: 8px solid var(--color-azul-morado);
     background: linear-gradient(135deg, var(--color-gradiente-inicio), var(--color-gradiente-fin));
