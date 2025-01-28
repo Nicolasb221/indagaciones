@@ -494,7 +494,7 @@
     align-items: center;
     height: 35px;
     width: 150px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
   }
   .titulo-clase{
     font-size: 16px;
