@@ -38,11 +38,15 @@
             </div>
           </div>
           <div class="container-bot">
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Corrupcion">Corrupción</button>
+            <div class="container-bot-b" @click="Corrupcion">
+              <fa :icon="['fas', 'comments-dollar']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Corrupción</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Narcotrafico">Narcotráfico</button>
+            <div class="container-bot-b"  @click="Narcotrafico">
+              <fa :icon="['fas', 'person-rifle']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Narcotráfico</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b">
               <button class="botonbusqueda" @click="Lavado">Lavado de</button>
