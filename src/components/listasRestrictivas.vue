@@ -417,7 +417,8 @@
   }
   .container-bot-b{
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    align-items: center;    
   }
   .botonbusqueda{
     color:var(--color-azul-kp);
