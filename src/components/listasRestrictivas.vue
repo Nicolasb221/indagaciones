@@ -530,6 +530,7 @@
     display: flex;
     justify-content: center;
     margin-right: 10px;
+    margin-left: 10px;
     align-items: center;
     height: 30px;
     width: 30px;
