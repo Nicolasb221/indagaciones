@@ -33,7 +33,6 @@
     background: var(--color-fondo-n);
     font-family: 'Anton', sans-serif;
     user-select: none;
-    overflow: hidden;
     height: 100vh;
   }
   .container{
