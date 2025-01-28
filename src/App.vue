@@ -39,6 +39,7 @@
   .container{
     display: flex;
     justify-content: center;
+    align-content: center;
   }
   .main {
     position: fixed;
