@@ -519,6 +519,7 @@
     font-size: 16px;
     font-family: 'Bubbler One', sans-serif;
     color: var(--color-azul-kp);
+    margin-top: 10px;
   }
   .botonbusqueda{
     display: flex;
