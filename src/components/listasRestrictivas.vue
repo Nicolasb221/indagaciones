@@ -499,7 +499,7 @@
     justify-content: flex-start;
     align-items: center;
     height: 35px;
-    width: 150px;
+    width: 180px;
     margin-bottom: 10px;
     border-bottom: 1px solid var( --color-azul-claro);
     box-shadow: 0 8px 5px #4444ffd9;
