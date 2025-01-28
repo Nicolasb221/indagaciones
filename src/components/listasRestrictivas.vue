@@ -459,7 +459,7 @@
   .container-datos-i{
     display:flex;
     max-width: 1200px;
-    min-width: 828px;
+    min-width: 823px;
     flex-direction: column;
     margin: 20px;
     padding: 20px;
