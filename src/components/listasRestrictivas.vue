@@ -338,8 +338,8 @@
     flex-grow: wrap;
     color: var(--color-morado-claro2);
     font-family: 'Bubbler One', sans-serif;
-    font-size: 13px;
-    padding: 5px;
+    font-size: 15px;
+    padding: 8px;
     border: none;
     border-radius: 10px;
     outline: none;
