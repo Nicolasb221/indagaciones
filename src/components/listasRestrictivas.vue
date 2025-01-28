@@ -1,7 +1,7 @@
 <template>
     <div class="box-container">
       <form v-if="formularioVisible" @submit.prevent="almacenarDatos" class="container-formulario">
-        <label for="nombre" class="titulo">Indagacion Terceros</label><br>
+        <label for="nombre" class="titulo">Indagacion Terceros</label>
         <div class="container-inputs">
           <input type="text" class="input-container-input" id="nombre" v-model="nombre" placeholder="Ingrese el nombre" required>
           <input type="text" class="input-container-input" id="apellidos" v-model="apellidos" placeholder="Ingrese el apellido">
