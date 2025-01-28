@@ -502,7 +502,7 @@
     width: 150px;
     margin-bottom: 10px;
     border-bottom: 1px solid var( --color-azul-claro);
-    box-shadow: 0 8px 10px #4444ffd9;
+    box-shadow: 0 8px 5px #4444ffd9;
     border-radius: 30px;
     position: relative;
     right: 30px;
