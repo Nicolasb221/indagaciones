@@ -43,59 +43,89 @@
               <div class="botonbusqueda">Corrupción</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
-            <div class="container-bot-b"  @click="Narcotrafico">
+            <div class="container-bot-b" @click="Narcotrafico">
               <fa :icon="['fas', 'person-rifle']" style="color: var(--color-azul-kp);" />
               <div class="botonbusqueda">Narcotráfico</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Lavado">Lavado de</button>
+            <div class="container-bot-b" @click="Lavado">
+              <fa :icon="['fas', 'sack-dollar']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Lavado de</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Fraude">Fraude</button>
+              <fa :icon="['fas', 'magnifying-glass-dollar']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda" @click="Fraude">Fraude</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Facesearch">Facesearch</button>
-            </div>
-          </div>
-          <div class="container-bot">
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Facebook">Facebook</button>
-            </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Instagram">Instagram</button>
-            </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="TikTok">TikTok</button>
-            </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Pinterest">Pinterest</button>
-            </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Twitter">X</button>
-            </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Youtube">Youtube</button>
-            </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Socialsearch">Social search</button>
+            <div class="container-bot-b" @click="Facesearch">
+              <fa :icon="['fas', 'user-secret']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Facesearch</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
           </div>
           <div class="container-bot">
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Truora">Truora</button>
+            <div class="container-bot-b" @click="Facebook">
+              <fa :icon="['fab', 'square-facebook']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Facebook</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Ramajudicial">Rama judicial</button>
+            <div class="container-bot-b" @click="Instagram">
+              <fa :icon="['fab', 'square-instagram']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Instagram</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Offshoreleaks">Offshoreleaks</button>
+            <div class="container-bot-b" @click="TikTok">
+              <fa :icon="['fab', 'tiktok']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">TikTok</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Wc">Wc</button>
+            <div class="container-bot-b" @click="Pinterest">
+              <fa :icon="['fab', 'pinterest']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Pinterest</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Contaduria">Contaduría</button>
+            <div class="container-bot-b" @click="Twitter">
+              <fa :icon="['fab', 'square-x-twitter']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">X</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+            </div>
+            <div class="container-bot-b" @click="Youtube">
+              <fa :icon="['fab', 'square-youtube']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Youtube</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+            </div>
+            <div class="container-bot-b" @click="Socialsearch">
+              <fa :icon="['fas', 'users']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Social search</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+            </div>
+          </div>
+          <div class="container-bot">
+            <div class="container-bot-b" @click="Truora">
+              <fa :icon="['far', 'folder-open']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Truora</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+            </div>
+            <div class="container-bot-b" @click="Ramajudicial">
+              <fa :icon="['fas', 'gavel']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Rama judicial</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+            </div>
+            <div class="container-bot-b" @click="Offshoreleaks">
+              <fa :icon="['fas', 'magnifying-glass']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Offshoreleaks</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+            </div>
+            <div class="container-bot-b" @click="Wc">
+              <fa :icon="['fas', 'handcuffs']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Wc</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+            </div>
+            <div class="container-bot-b" @click="Contaduria">
+              <fa :icon="['fas', 'money-bill-transfer']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Contaduría</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
           </div>
         </div>
