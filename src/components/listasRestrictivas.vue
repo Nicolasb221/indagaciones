@@ -497,6 +497,7 @@
     margin-bottom: 10px;
     border-bottom: 1px solid var( --color-azul-claro);
     box-shadow: 0 4px 6px var(--color-azul-morado);
+    border-radius: 30px;
   }
   .titulo-clase{
     font-size: 16px;
