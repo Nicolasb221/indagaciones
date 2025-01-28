@@ -37,6 +37,7 @@
               <div class="botonbusqueda">Informa</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[2]"/>
             </div>
+            <div class="container-clases"><div class="container-icon"><fa :icon="['fas', 'circle-question']" style="color: var(--color-azul-kp);" /></div><div class="titulo-clase">Tiene vinculaciones societarias?</div></div>
           </div>
           <div class="container-bot">
             <div class="container-clases"><div class="container-icon"><fa :icon="['fas', 'user-shield']" style="color: var(--color-azul-kp);" /></div><div class="titulo-clase">INTEGRIDAD</div></div>
