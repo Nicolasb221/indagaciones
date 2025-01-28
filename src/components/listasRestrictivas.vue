@@ -502,6 +502,7 @@
     height: 35px;
     width: 180px;
     margin-bottom: 10px;
+    margin-top: 10px;
     border-bottom: 1px solid var( --color-azul-claro);
     box-shadow: 0 8px 5px #4444ffd9;
     border-radius: 30px;
@@ -519,7 +520,6 @@
     font-size: 16px;
     font-family: 'Bubbler One', sans-serif;
     color: var(--color-azul-kp);
-    margin-top: 10px;
   }
   .botonbusqueda{
     display: flex;
