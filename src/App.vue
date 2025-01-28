@@ -1,8 +1,6 @@
 <template>
   <div class="main"></div>
-    <div class="container">
       <listasRestrictivas/>
-    </div>
 </template>
 
 <script setup>
@@ -35,12 +33,6 @@
     user-select: none;
     overflow: hidden;
     height: 100vh;
-  }
-  .container{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-grow: 1;
   }
   .main {
     position: fixed;
