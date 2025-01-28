@@ -514,7 +514,7 @@
   }
   .container-icon{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     height: 30px;
     width: 30px;
