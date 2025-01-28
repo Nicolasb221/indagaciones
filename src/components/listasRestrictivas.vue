@@ -437,7 +437,7 @@
   .container-datos{
     display: flex ;
     max-width: 1200px;
-    width: 90%;
+    width: 95%;
     font-family: 'Bubbler One', sans-serif;
     flex-direction: column;
     color: var(--color-azul-kp);
