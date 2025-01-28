@@ -27,12 +27,12 @@
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout" />
             </div>
             <div class="container-bot-b" @click="Pep">
-              <div class="container-icon"></div><fa :icon="['fas', 'bullhorn']" style="color: var(--color-azul-kp);" /></div>
+              <div class="container-icon"><fa :icon="['fas', 'bullhorn']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">PEP</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b" @click="Informa">
-              <div class="container-icon"></div><fa :icon="['fas', 'users-between-lines']" style="color: var(--color-azul-kp);" /></div>
+              <div class="container-icon"><fa :icon="['fas', 'users-between-lines']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Informa</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
