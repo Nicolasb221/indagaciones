@@ -1,14 +1,13 @@
 <template>
     <div class="box-container">
       <form v-if="formularioVisible" @submit.prevent="almacenarDatos" class="container-formulario">
-        <label for="nombre" class="titulo">Indagacion Terceros</label><br>
+        <label for="nombre" class="titulo">Indagacion Terceros</label>
         <div class="container-inputs">
           <input type="text" class="input-container-input" id="nombre" v-model="nombre" placeholder="Ingrese el nombre" required>
           <input type="text" class="input-container-input" id="apellidos" v-model="apellidos" placeholder="Ingrese el apellido">
           <input type="number" class="input-container-input" id="documento" v-model="documento" placeholder="Cédula de ciudadanía">
 
         </div>
-        <br><br>
         <div class="boton-cargar">
           <fa @click="almacenarDatos" :icon="['fas', 'circle-right']" size="2xl" style="cursor: pointer;color: var(--color-azul-kp);"/>
         </div>
@@ -22,71 +21,111 @@
         </div>
         <div class="container-buttons">
           <div class="container-bot">
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Linkedin">Linkedin</button>
+            <div class="container-bot-b" @click="Linkedin">
+              <fa :icon="['fab', 'linkedin']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda" >Linkedin</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Pep">PEP</button>
+            <div class="container-bot-b" @click="Pep">
+              <fa :icon="['fas', 'bullhorn']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">PEP</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Informa">Informa</button>
-            </div>
-          </div>
-          <div class="container-bot">
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Corrupcion">Corrupción</button>
-            </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Narcotrafico">Narcotráfico</button>
-            </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Lavado()">Lavado de</button>
-            </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Fraude">Fraude</button>
-            </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Facesearch">Facesearch</button>
+            <div class="container-bot-b" @click="Informa">
+              <fa :icon="['fas', 'users-between-lines']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Informa</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
           </div>
           <div class="container-bot">
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Facebook">Facebook</button>
+            <div class="container-bot-b" @click="Corrupcion">
+              <fa :icon="['fas', 'comments-dollar']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Corrupción</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+            </div>
+            <div class="container-bot-b" @click="Narcotrafico">
+              <fa :icon="['fas', 'person-rifle']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Narcotráfico</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+            </div>
+            <div class="container-bot-b" @click="Lavado">
+              <fa :icon="['fas', 'sack-dollar']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Lavado de</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Instagram">Instagram</button>
+              <fa :icon="['fas', 'magnifying-glass-dollar']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda" @click="Fraude">Fraude</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="TikTok">TikTok</button>
-            </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Pinterest">Pinterest</button>
-            </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Twitter">X</button>
-            </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Youtube">Youtube</button>
-            </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Socialsearch">Social search</button>
+            <div class="container-bot-b" @click="Facesearch">
+              <fa :icon="['fas', 'user-secret']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Facesearch</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
           </div>
           <div class="container-bot">
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Truora">Truora</button>
+            <div class="container-bot-b" @click="Facebook">
+              <fa :icon="['fab', 'square-facebook']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Facebook</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Ramajudicial">Rama judicial</button>
+            <div class="container-bot-b" @click="Instagram">
+              <fa :icon="['fab', 'square-instagram']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Instagram</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Offshoreleaks">Offshoreleaks</button>
+            <div class="container-bot-b" @click="TikTok">
+              <fa :icon="['fab', 'tiktok']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">TikTok</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Wc">Wc</button>
+            <div class="container-bot-b" @click="Pinterest">
+              <fa :icon="['fab', 'pinterest']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Pinterest</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
-            <div class="container-bot-b">
-              <button class="botonbusqueda" @click="Contaduria">Contaduría</button>
+            <div class="container-bot-b" @click="Twitter">
+              <fa :icon="['fab', 'square-x-twitter']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">X</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+            </div>
+            <div class="container-bot-b" @click="Youtube">
+              <fa :icon="['fab', 'square-youtube']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Youtube</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+            </div>
+            <div class="container-bot-b" @click="Socialsearch">
+              <fa :icon="['fas', 'users']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Social search</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+            </div>
+          </div>
+          <div class="container-bot">
+            <div class="container-bot-b" @click="Truora">
+              <fa :icon="['far', 'folder-open']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Truora</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+            </div>
+            <div class="container-bot-b" @click="Ramajudicial">
+              <fa :icon="['fas', 'gavel']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Rama judicial</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+            </div>
+            <div class="container-bot-b" @click="Offshoreleaks">
+              <fa :icon="['fas', 'magnifying-glass']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Offshoreleaks</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+            </div>
+            <div class="container-bot-b" @click="Wc">
+              <fa :icon="['fas', 'handcuffs']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Wc</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+            </div>
+            <div class="container-bot-b" @click="Contaduria">
+              <fa :icon="['fas', 'money-bill-transfer']" style="color: var(--color-azul-kp);" />
+              <div class="botonbusqueda">Contaduría</div>
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
           </div>
         </div>
@@ -299,8 +338,8 @@
   <style scoped>
 
   .box-container {
-    width: 70%;
-    height: 70%;
+    width: 90%;
+    height: 90%;
     display: flex;
     position: absolute;
     justify-content: space-evenly;
@@ -311,11 +350,11 @@
   input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;}
   
   .container-formulario{
-    height: 80%;
+    height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding: 20px;
+    padding: 10px;
     border-radius: 15px;
     border: 8px solid var(--color-azul-morado);
     background: linear-gradient(135deg, var(--color-gradiente-inicio), var(--color-gradiente-fin));
@@ -324,7 +363,7 @@
     background-color: #DBDBDB;
 
   }
-  .titulo{font-size: 50px;text-align: center;color:var(--color-azul-kp);}
+  .titulo{font-size: 40px;text-align: center;color:var(--color-azul-kp);}
   .container-inputs{
     position: relative;
     width: 100%;
@@ -340,13 +379,14 @@
     color: var(--color-morado-claro2);
     font-family: 'Bubbler One', sans-serif;
     font-size: 15px;
-    padding: 10px;
+    padding: 8px;
     border: none;
     border-radius: 10px;
     outline: none;
     border-bottom: 2px solid var(--color-morado-claro2);
     background: linear-gradient(0deg, var(--color-morado-clarot), var(--color-gradiente-fin2));
-    margin: 20px;
+    margin: 10px;
+    margin-top: 0px;
     transition: border-bottom-color 1s ease-in;
   }
   .input-container-input:focus{
@@ -363,13 +403,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-height: 32px;
   }
   .b-botoncargar{width: 10%;}
 
   .container-datos{
     display: flex ;
-    max-width: 900px;
-    width: 80%;
+    max-width: 1200px;
+    width: 90%;
     font-family: 'Bubbler One', sans-serif;
     flex-direction: column;
     color: var(--color-azul-kp);
@@ -378,7 +419,7 @@
   }
   .container-datos-i{
     display:flex;
-    max-width: 900px;
+    max-width: 1200px;
     flex-direction: column;
     margin: 20px;
     padding: 20px;
@@ -395,10 +436,10 @@
 
   .container-buttons{
     display:flex;
-    max-width: 900px;
+    max-width: 1200px;
     flex-flow: row wrap;
     margin: 20px;
-    padding: 20px;
+    padding: 10px;
     border-radius: 15px;
     border: 8px solid var(--color-azul-morado);
     background: linear-gradient(135deg, var(--color-gradiente-inicio), var(--color-gradiente-fin));
@@ -415,17 +456,27 @@
   }
   .container-bot-b{
     display: flex;
-    justify-content: center;    
+    justify-content: space-between;
+    align-items: center;    
+    cursor:pointer;
+    min-width: 135px;
+    height: 30px;
   }
   .botonbusqueda{
+    display: flex;
+    padding: 0px;
+    justify-content: center;
     color:var(--color-azul-kp);
-    min-width: 150px;
     background-color: transparent;
     border: none;
-    cursor:pointer;
-    font-size: 18px;
-    margin:5px;
+    font-size: 14px;
     font-family: 'Bubbler One', sans-serif;
-
+    transition: color .3s ease-in, font-weight .3s ease-in, font-size .3s ease-in;
+  }
+  .botonbusqueda:hover{
+    color: var(--color-azul-morado);
+    transition: color .3s ease-out, font-weight .3s ease-out, font-size .3s ease-out;
+    font-weight: bold;
+    font-size: 16px;
   }
   </style>
