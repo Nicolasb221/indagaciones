@@ -304,8 +304,8 @@
   <style scoped>
 
   .box-container {
-    width: 70%;
-    height: 70%;
+    width: 90%;
+    height: 90%;
     display: flex;
     position: absolute;
     justify-content: space-evenly;
@@ -375,8 +375,8 @@
 
   .container-datos{
     display: flex ;
-    max-width: 900px;
-    width: 80%;
+    max-width: 1200px;
+    width: 90%;
     font-family: 'Bubbler One', sans-serif;
     flex-direction: column;
     color: var(--color-azul-kp);
@@ -385,7 +385,7 @@
   }
   .container-datos-i{
     display:flex;
-    max-width: 900px;
+    max-width: 1200px;
     flex-direction: column;
     margin: 20px;
     padding: 20px;
@@ -402,7 +402,7 @@
 
   .container-buttons{
     display:flex;
-    max-width: 900px;
+    max-width: 1200px;
     flex-flow: row wrap;
     margin: 20px;
     padding: 10px;
