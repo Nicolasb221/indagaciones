@@ -479,6 +479,7 @@
     margin: 5px;
     padding: 5px;
     box-shadow: 0 8px 10px #4444ffd9;
+    background-color: transparent;
   }
   .container-bot-b{
     display: flex;
