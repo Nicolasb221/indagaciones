@@ -323,7 +323,7 @@
     background-color: #DBDBDB;
 
   }
-  .titulo{font-size: 50px;text-align: center;color:var(--color-azul-kp);}
+  .titulo{font-size: 40px;text-align: center;color:var(--color-azul-kp);}
   .container-inputs{
     position: relative;
     width: 100%;
