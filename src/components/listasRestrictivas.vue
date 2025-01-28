@@ -504,13 +504,15 @@
     border-bottom: 1px solid var( --color-azul-claro);
     box-shadow: 0 8px 10px #4444ffd9;
     border-radius: 30px;
-    position: relative;
-    right: -30px;
+
   }
   .titulo-clase{
     font-size: 16px;
     font-family: 'Anton', sans-serif;
     color: var(--color-azul-kp);
+    position: relative;
+    right: -30px;
+    top: 10px
   }
   .botonbusqueda{
     display: flex;
