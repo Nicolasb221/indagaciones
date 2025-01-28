@@ -418,7 +418,7 @@
   }
   .container-bot-b{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;    
     cursor:pointer;
     min-width: 110px;
