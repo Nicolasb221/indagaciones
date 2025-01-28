@@ -24,12 +24,12 @@
             <div class="container-bot-b" @click="Linkedin">
               <div class="container-icon"><fa :icon="['fab', 'linkedin']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda" >Linkedin</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[1]" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[0]" />
             </div>
             <div class="container-bot-b" @click="Pep">
               <div class="container-icon"><fa :icon="['fas', 'bullhorn']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">PEP</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[1]"/>
             </div>
             <div class="container-bot-b" @click="Informa">
               <div class="container-icon"><fa :icon="['fas', 'users-between-lines']" style="color: var(--color-azul-kp);" /></div>
@@ -179,7 +179,7 @@
           archivoWc: `${this.iniciales} - WC`,
           archivoContaduria: `${this.iniciales} - Contaduría`,
           archivoTemp: '',
-          flagCheckout: [0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+          flagCheckout: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
         };
         this.formularioVisible = false;
         this.nombre = '';
