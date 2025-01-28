@@ -311,7 +311,7 @@
   input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {-webkit-appearance: none;}
   
   .container-formulario{
-    height: 80%;
+    height: 470px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
