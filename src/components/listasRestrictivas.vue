@@ -22,6 +22,7 @@
         <div class="container-buttons">
           <div class="container-bot">
             <div class="container-bot-b">
+              <fa :icon="['fab', 'linkedin']" style="color: var(--color-azul-kp);" />
               <button class="botonbusqueda" @click="Linkedin">Linkedin</button>
             </div>
             <div class="container-bot-b">
