@@ -24,7 +24,7 @@
             <div class="container-bot-b" @click="Linkedin">
               <fa :icon="['fab', 'linkedin']" style="color: var(--color-azul-kp);" />
               <div class="botonbusqueda" >Linkedin</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="flagCheckout" />
             </div>
             <div class="container-bot-b" @click="Pep">
               <fa :icon="['fas', 'bullhorn']" style="color: var(--color-azul-kp);" />
@@ -134,6 +134,10 @@
   </template>
   
   <script>
+
+
+  const flagCheckout = false; 
+  
   export default {
     name: "listasRestrictivas",
     data() {
@@ -201,6 +205,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoLinkedin;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        flagCheckout = true;
         window.open(urlBusqueda, '_blank');
       },
       Pep() {
