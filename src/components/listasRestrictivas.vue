@@ -478,8 +478,9 @@
     flex-direction: column;
     margin: 5px;
     padding: 5px;
-    box-shadow: 0 8px 10px #4444ffd9;
+    box-shadow: 10px 8px 10px #4444ffd9;
     background: transparent;
+    border-radius: 15px;
   }
   .container-bot-b{
     display: flex;
