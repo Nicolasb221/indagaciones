@@ -460,7 +460,7 @@
   }
   .container-bot-b{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;    
     cursor:pointer;
     min-width: 135px;
