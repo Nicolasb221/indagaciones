@@ -1,6 +1,8 @@
 <template>
   <div class="main"></div>
+    <div class="container">
       <listasRestrictivas/>
+    </div>
 </template>
 
 <script setup>
@@ -27,13 +29,17 @@
   body{
     margin-top: 60px;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     background: var(--color-fondo-n);
     font-family: 'Anton', sans-serif;
     user-select: none;
     overflow: hidden;
     height: 100vh;
-    width: 100%;
+  }
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .main {
     position: fixed;
