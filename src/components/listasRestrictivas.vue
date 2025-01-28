@@ -34,98 +34,98 @@
             <div class="container-bot-b" @click="Informa">
               <div class="container-icon"><fa :icon="['fas', 'users-between-lines']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Informa</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[2]"/>
             </div>
           </div>
           <div class="container-bot">
             <div class="container-bot-b" @click="Corrupcion">
               <div class="container-icon"><fa :icon="['fas', 'comments-dollar']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Corrupción</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[3]"/>
             </div>
             <div class="container-bot-b" @click="Narcotrafico">
               <div class="container-icon"><fa :icon="['fas', 'person-rifle']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Narcotráfico</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[4]"/>
             </div>
             <div class="container-bot-b" @click="Lavado">
               <div class="container-icon"><fa :icon="['fas', 'sack-dollar']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Lavado de</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[5]"/>
             </div>
             <div class="container-bot-b">
               <div class="container-icon"><fa :icon="['fas', 'magnifying-glass-dollar']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda" @click="Fraude">Fraude</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[6]"/>
             </div>
             <div class="container-bot-b" @click="Facesearch">
               <div class="container-icon"><fa :icon="['fas', 'user-secret']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Facesearch</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[7]"/>
             </div>
           </div>
           <div class="container-bot">
             <div class="container-bot-b" @click="Facebook">
               <div class="container-icon"><fa :icon="['fab', 'square-facebook']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Facebook</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[8]"/>
             </div>
             <div class="container-bot-b" @click="Instagram">
               <div class="container-icon"><fa :icon="['fab', 'square-instagram']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Instagram</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[9]"/>
             </div>
             <div class="container-bot-b" @click="TikTok">
               <div class="container-icon"><fa :icon="['fab', 'tiktok']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">TikTok</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[10]"/>
             </div>
             <div class="container-bot-b" @click="Pinterest">
               <div class="container-icon"><fa :icon="['fab', 'pinterest']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Pinterest</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[11]"/>
             </div>
             <div class="container-bot-b" @click="Twitter">
               <div class="container-icon"><fa :icon="['fab', 'square-x-twitter']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">X</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[12]"/>
             </div>
             <div class="container-bot-b" @click="Youtube">
               <div class="container-icon"><fa :icon="['fab', 'square-youtube']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Youtube</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[13]"/>
             </div>
             <div class="container-bot-b" @click="Socialsearch">
               <div class="container-icon"><fa :icon="['fas', 'users']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Social search</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[14]"/>
             </div>
           </div>
           <div class="container-bot">
             <div class="container-bot-b" @click="Truora">
               <div class="container-icon"><fa :icon="['far', 'folder-open']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Truora</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[15]"/>
             </div>
             <div class="container-bot-b" @click="Ramajudicial">
               <div class="container-icon"><fa :icon="['fas', 'gavel']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Rama judicial</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[16]"/>
             </div>
             <div class="container-bot-b" @click="Offshoreleaks">
               <div class="container-icon"><fa :icon="['fas', 'magnifying-glass']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Offshoreleaks</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[17]"/>
             </div>
             <div class="container-bot-b" @click="Wc">
               <div class="container-icon"><fa :icon="['fas', 'handcuffs']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Wc</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[18]"/>
             </div>
             <div class="container-bot-b" @click="Contaduria">
               <div class="container-icon"><fa :icon="['fas', 'money-bill-transfer']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Contaduría</div>
-              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
+              <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[19]"/>
             </div>
           </div>
         </div>
@@ -212,12 +212,14 @@
         const urlBusqueda = `https://www.funcionpublica.gov.co/fdci/consultaCiudadana/consultaPEP?tipoRegistro=0&numeroDocumento=${encodeURIComponent(consulta)}&primerNombre=&segundoNombre=&primerApellido=&segundoApellido=&entidad=&dpto=&mun=&find=Buscar#resultadosBusqueda`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoPEP;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[1] = 1;
         window.open(urlBusqueda, '_blank');
       },
       Informa() {
         const urlBusqueda = `https://www.informacolombia.com/InformaIntWeb/Main/id_sess/00081623158000034624480000041879/idioma/01/activa/2/id_tmp/974.0/prod/VINCULACIONES_RESULTADO_CONTEO/prod_desde/BUSCADOR_VINCULACIONES`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoInforma;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[2] = 1;
         window.open(urlBusqueda, '_blank');
       },  
       Corrupcion() {
@@ -225,6 +227,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoCorrupcion;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[3] = 1;
         window.open(urlBusqueda, '_blank');
       },
       Narcotrafico() {
@@ -232,6 +235,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoNarcotrafico;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[4] = 1;
         window.open(urlBusqueda, '_blank');
       },
       Lavado() {
@@ -239,6 +243,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoLavado;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[5] = 1;
         window.open(urlBusqueda, '_blank');
       },
       Fraude() {
@@ -246,6 +251,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoFraude;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[6] = 1;
         window.open(urlBusqueda, '_blank');
       },
       Facesearch() {
@@ -253,6 +259,7 @@
         const urlBusqueda = `https://www.google.com/search?hl=es&tbm=isch&q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoFace;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[7] = 1;
         window.open(urlBusqueda, '_blank');
       },
       Facebook() {
@@ -260,6 +267,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoFacebook;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[8] = 1;
         window.open(urlBusqueda, '_blank');
       },   
       Instagram() {
@@ -267,6 +275,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoInstagram;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[9] = 1;
         window.open(urlBusqueda, '_blank');
       },   
       TikTok() {
@@ -274,6 +283,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoTiktok;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[10] = 1;
         window.open(urlBusqueda, '_blank');
       },   
       Pinterest() {
@@ -281,6 +291,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoPinterest;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[11] = 1;
         window.open(urlBusqueda, '_blank');
       },   
       Twitter() {
@@ -288,6 +299,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoX;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[12] = 1;
         window.open(urlBusqueda, '_blank');
       },  
       Youtube() {
@@ -295,6 +307,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoYoutube;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[13] = 1;
         window.open(urlBusqueda, '_blank');
       },
       Socialsearch() {
@@ -302,18 +315,21 @@
         const urlBusqueda = `https://www.social-searcher.com/social-buzz/?q5=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoSs;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[14] = 1;
         window.open(urlBusqueda, '_blank');
       },    
       Truora() {
         const urlBusqueda = `https://checks.truora.com/#/dashboard/check/custom`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoTruora;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[15] = 1;
         window.open(urlBusqueda, '_blank');
       },    
       Ramajudicial() {
         const urlBusqueda = `https://consultaprocesos.ramajudicial.gov.co/Procesos/NombreRazonSocial`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoRj;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[16] = 1;
         window.open(urlBusqueda, '_blank');
       }, 
       Offshoreleaks() {
@@ -321,18 +337,21 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoOff;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[17] = 1;
         window.open(urlBusqueda, '_blank');
       }, 
       Wc() {
         const urlBusqueda = `https://members.worldcompliance.com/SignIn.aspx`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoWc;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[18] = 1;
         window.open(urlBusqueda, '_blank');
       },
       Contaduria() {
         const urlBusqueda = `https://eris.contaduria.gov.co/BDME/#`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoContaduria;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
+        this.datosAlmacenados.flagCheckout[19] = 1;
         window.open(urlBusqueda, '_blank');
       } 
       
