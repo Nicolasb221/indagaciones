@@ -40,6 +40,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    flex-grow: 1;
   }
   .main {
     position: fixed;
