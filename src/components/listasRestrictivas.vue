@@ -431,7 +431,6 @@
     background-color: transparent;
     border: none;
     font-size: 14px;
-    margin:5px;
     font-family: 'Bubbler One', sans-serif;
     transition: color .3s ease-in, font-weight .3s ease-in, font-size .3s ease-in;
   }
