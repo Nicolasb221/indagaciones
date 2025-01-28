@@ -478,7 +478,7 @@
     flex-direction: column;
     margin: 5px;
     padding: 5px;
-    box-shadow: -1px 1px 10px #4444ffd9;
+    box-shadow: -1px 1px 10px #4444ff7d;
     background: transparent;
     border-radius: 15px;
     backdrop-filter: blur(10px);
