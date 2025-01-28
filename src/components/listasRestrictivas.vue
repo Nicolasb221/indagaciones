@@ -136,7 +136,7 @@
   <script>
 
 
-  const flagCheckout = false; 
+  let flagCheckout = false; 
   
   export default {
     name: "listasRestrictivas",
