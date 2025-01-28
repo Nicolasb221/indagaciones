@@ -22,7 +22,6 @@
         <div class="container-buttons">
           <div class="container-bot">
             <div class="container-clases"><div class="container-icon"><fa :icon="['fas', 'eye']" style="color: var(--color-azul-kp);" /></div><div class="titulo-clase">IDENTIFICACIÓN</div></div>
-            
             <div class="container-bot-b" @click="Linkedin">
               <div class="container-icon"><fa :icon="['fab', 'linkedin']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda" >Linkedin</div>
@@ -40,6 +39,7 @@
             </div>
           </div>
           <div class="container-bot">
+            <div class="container-clases"><div class="container-icon"><fa :icon="['fas', 'user-shield']" style="color: var(--color-azul-kp);" /></div><div class="titulo-clase">INTEGRIDAD</div></div>
             <div class="container-bot-b" @click="Corrupcion">
               <div class="container-icon"><fa :icon="['fas', 'comments-dollar']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda">Corrupción</div>
