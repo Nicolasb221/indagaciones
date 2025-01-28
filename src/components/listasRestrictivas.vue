@@ -469,6 +469,7 @@
   .botonbusqueda{
     display: flex;
     padding: 0px;
+    min-width: 95px;
     justify-content: center;
     color:var(--color-azul-kp);
     background-color: transparent;
