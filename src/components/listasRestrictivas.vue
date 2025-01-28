@@ -481,6 +481,7 @@
     box-shadow: -10px 10px 100px #4444ffd9;
     background: transparent;
     border-radius: 15px;
+    backdrop-filter: blur(10px);
   }
   .container-bot-b{
     display: flex;
