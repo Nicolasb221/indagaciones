@@ -506,7 +506,7 @@
     border-radius: 30px;
     position: relative;
     right: 30px;
-    top: -10px
+    top: -50px
 
   }
   .titulo-clase{
