@@ -423,6 +423,7 @@
     cursor:pointer;
   }
   .botonbusqueda{
+    justify-content: center;
     color:var(--color-azul-kp);
     min-width: 90px;
     background-color: transparent;
