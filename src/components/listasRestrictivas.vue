@@ -23,7 +23,7 @@
           <div class="container-bot">
             <div class="container-bot-b" @click="Linkedin">
               <fa :icon="['fab', 'linkedin']" style="color: var(--color-azul-kp);" />
-              <p class="botonbusqueda" >Linkedin</p>
+              <div class="botonbusqueda" >Linkedin</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" />
             </div>
             <div class="container-bot-b">
