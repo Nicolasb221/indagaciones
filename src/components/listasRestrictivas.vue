@@ -21,6 +21,8 @@
         </div>
         <div class="container-buttons">
           <div class="container-bot">
+            <div class="container-clases"><div class="container-icon"><fa :icon="['fas', 'eye']" style="color: var(--color-azul-kp);" /></div><div class="titulo-clase">IDENTIFICACIÓN</div></div>
+            
             <div class="container-bot-b" @click="Linkedin">
               <div class="container-icon"><fa :icon="['fab', 'linkedin']" style="color: var(--color-azul-kp);" /></div>
               <div class="botonbusqueda" >Linkedin</div>
@@ -484,6 +486,19 @@
     cursor:pointer;
     min-width: 135px;
     height: 30px;
+  }
+
+  .container-clases{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 60px;
+  }
+  .titulo-clase{
+    font-size: 16px;
+    font-family: 'Anton', sans-serif;
+    color: var(--color-azul-kp);
   }
   .botonbusqueda{
     display: flex;
