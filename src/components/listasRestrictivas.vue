@@ -495,6 +495,7 @@
     height: 35px;
     width: 150px;
     margin-bottom: 10px;
+    border-bottom: 1px solid var( --color-azul-claro)
   }
   .titulo-clase{
     font-size: 16px;

@@ -18,13 +18,13 @@
     --color-morado-claro: #7b9597;
     --color-morado-claro2: #626288;
     --color-morado-clarot: #a0a0b875;
-    --color-validate : #11ac18;
     --color-gradiente-inicio: rgba(4, 0, 251, 0.09);
     --color-gradiente-fin: rgba(255, 255, 255, 0.3);
     --color-gradiente-fin2: rgba(255, 255, 255, 0);
     --color-borde: rgba(255, 255, 255, 0.2);
     --color-sombra: rgba(0, 0, 0, 0.1);
     --color-border-box-boton: #A4A4EB;
+    --color-azul-claro: #2196f3;
   }
   body{
     margin-top: 60px;
