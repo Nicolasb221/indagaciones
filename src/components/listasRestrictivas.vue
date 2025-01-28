@@ -37,7 +37,7 @@
               <div class="botonbusqueda">Informa</div>
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[2]"/>
             </div>
-            <div class="container-clases"><div class="container-icon"><fa :icon="['fas', 'circle-question']" style="color: var(--color-azul-kp);" /></div><div class="titulo-clase-2">Tiene vinculaciones societarias?</div></div>
+            <div class="container-clases-2"><div class="container-icon"><fa :icon="['fas', 'circle-question']" style="color: var(--color-azul-kp);" /></div><div class="titulo-clase-2">Tiene vinculaciones societarias?</div></div>
           </div>
           <div class="container-bot">
             <div class="container-clases"><div class="container-icon"><fa :icon="['fas', 'user-shield']" style="color: var(--color-azul-kp);" /></div><div class="titulo-clase">INTEGRIDAD</div></div>
@@ -502,14 +502,21 @@
     height: 35px;
     width: 180px;
     margin-bottom: 10px;
-    margin-top: 10px;
     border-bottom: 1px solid var( --color-azul-claro);
     box-shadow: 0 8px 5px #4444ffd9;
     border-radius: 30px;
     position: relative;
     right: 30px;
     top: -5px
-
+  }
+  .container-clases-2{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 35px;
+    width: 180px;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
   .titulo-clase{
     font-size: 16px;
