@@ -377,8 +377,8 @@
   <style scoped>
 
   .box-container {
-    width: 90%;
-    height: 90%;
+    width: 100%;
+    height: 100%;
     display: flex;
     position: absolute;
     justify-content: space-evenly;
