@@ -24,7 +24,7 @@
     --color-borde: rgba(255, 255, 255, 0.2);
     --color-sombra: rgba(0, 0, 0, 0.1);
     --color-border-box-boton: #A4A4EB;
-    --color-azul-claro: #2196f3;
+    --color-azul-claro: #214ff3c5;
   }
   body{
     margin-top: 60px;
