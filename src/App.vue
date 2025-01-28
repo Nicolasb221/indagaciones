@@ -33,6 +33,7 @@
     user-select: none;
     overflow: hidden;
     height: 100vh;
+    width: 100vw;
   }
   .main {
     position: fixed;
