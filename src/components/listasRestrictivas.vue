@@ -135,7 +135,7 @@
             </div>
           </div>
         </div>
-        <div class="container-datos-i" @click="Tvsocietarias" v-show="flagVs"></div>
+        <div class="container-datos-i" @click="Tvsocietarias" v-show="datosAlmacenados.flagVs"></div>
       </div>
     </div>
   </template>
