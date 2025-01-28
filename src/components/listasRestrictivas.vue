@@ -38,7 +38,7 @@
               <fa :icon="['fas', 'circle-check']" style="color: var(--color-azul-kp);" v-show="datosAlmacenados.flagCheckout[2]"/>
             </div>
             <div class="container-clases-2"><div class="container-icon"><fa :icon="['fas', 'circle-question']" style="color: var(--color-azul-kp);" /></div><div class="titulo-clase-2">¿Tiene vinculaciones societarias?</div></div>
-            <div class="container-clases-3"><div class="container-icon"><fa :icon="['fas', 'check']" style="color: var(--color-azul-kp);" /></div></div>
+            <div class="container-clases-3"><div class="container-icon-b"><fa :icon="['fas', 'check']" style="color: var(--color-azul-kp);" /></div></div>
           </div>
           <div class="container-bot">
             <div class="container-clases"><div class="container-icon"><fa :icon="['fas', 'user-shield']" style="color: var(--color-azul-kp);" /></div><div class="titulo-clase">INTEGRIDAD</div></div>
@@ -558,6 +558,16 @@
     align-items: center;
     height: 30px;
     width: 30px;
+  }
+  .container-icon-b{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
   }
   .botonbusqueda:hover{
     color: var(--color-azul-morado);
