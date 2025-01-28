@@ -421,12 +421,12 @@
     justify-content: center;
     align-items: center;    
     cursor:pointer;
+    min-width: 100px;
   }
   .botonbusqueda{
     display: flex;
     justify-content: center;
     color:var(--color-azul-kp);
-    min-width: 90px;
     background-color: transparent;
     border: none;
     font-size: 14px;
