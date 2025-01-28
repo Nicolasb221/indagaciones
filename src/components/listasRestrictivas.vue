@@ -338,14 +338,14 @@
     flex-grow: wrap;
     color: var(--color-morado-claro2);
     font-family: 'Bubbler One', sans-serif;
-    font-size: 15px;
-    padding: 10px;
+    font-size: 13px;
+    padding: 5px;
     border: none;
     border-radius: 10px;
     outline: none;
     border-bottom: 2px solid var(--color-morado-claro2);
     background: linear-gradient(0deg, var(--color-morado-clarot), var(--color-gradiente-fin2));
-    margin: 20px;
+    margin: 10px;
     margin-top: 0px;
     transition: border-bottom-color 1s ease-in;
   }
