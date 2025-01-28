@@ -37,9 +37,8 @@
     height: 100vh;
   }
   .container{
-    display: relative;
+    display: flex;
     justify-content: center;
-    align-items: center;
   }
   .main {
     position: fixed;
