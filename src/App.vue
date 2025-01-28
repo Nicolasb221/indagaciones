@@ -27,7 +27,7 @@
     --color-azul-claro: #214ff3c5;
   }
   body{
-    margin-top: 60px;
+    position: absolute;
     display: flex;
     justify-content: space-evenly;
     background: var(--color-fondo-n);
