@@ -135,6 +135,7 @@
             </div>
           </div>
         </div>
+        <div class="container-datos-i" @click="Tvsocietarias"></div>
       </div>
     </div>
   </template>
@@ -186,6 +187,7 @@
           archivoContaduria: `${this.iniciales} - Contaduría`,
           archivoTemp: '',
           flagCheckout: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+          flagVs: 0,
         };
         this.formularioVisible = false;
         this.nombre = '';
@@ -359,7 +361,10 @@
         this.copyPaste(this.datosAlmacenados.archivoTemp);
         this.datosAlmacenados.flagCheckout[19] = 1;
         window.open(urlBusqueda, '_blank');
-      } 
+      },
+      Tvsocietarias(){
+        this.datosAlmacenados.flagVs = 1;
+      }
       
     }
   };
