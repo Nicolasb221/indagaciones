@@ -179,7 +179,7 @@
           archivoWc: `${this.iniciales} - WC`,
           archivoContaduria: `${this.iniciales} - Contaduría`,
           archivoTemp: '',
-          flagCheckout: false,
+          flagCheckout: 0,
         };
         this.formularioVisible = false;
         this.nombre = '';
@@ -204,7 +204,7 @@
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoLinkedin;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
-        this.datosAlmacenados.flagCheckout = true;
+        this.datosAlmacenados.flagCheckout = 1;
         window.open(urlBusqueda, '_blank');
       },
       Pep() {
