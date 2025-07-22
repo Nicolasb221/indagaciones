@@ -347,7 +347,7 @@
         window.open(urlBusqueda, '_blank');
       }, 
       Offshoreleaks() {
-        const consulta = `${this.datosAlmacenados.valorT}} Site:https://offshoreleaks.icij.org`;
+        const consulta = `${this.datosAlmacenados.valorT} Site:https://offshoreleaks.icij.org`;
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoOff;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
