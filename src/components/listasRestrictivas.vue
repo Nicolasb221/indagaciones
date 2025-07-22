@@ -166,6 +166,7 @@
           label: textoLabel,
           valorN: this.nombre,
           valorA: `"${this.apellidos}"`,
+          valorT: `"${this.nombre} ${this.apellidos}"`,
           apellidosSS: this.apellidos,
           documentoId: this.documento,
           archivoLinkedin: `${this.iniciales} - Linkedin`,
@@ -236,7 +237,7 @@
         window.open(urlBusqueda, '_blank');
       },  
       Corrupcion() {
-        const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Corrupción`;
+        const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Corrupcion`;
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoCorrupcion;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
@@ -244,7 +245,7 @@
         window.open(urlBusqueda, '_blank');
       },
       Narcotrafico() {
-        const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Narcotráfico`;
+        const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Narcotrafico`;
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoNarcotrafico;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
@@ -346,7 +347,7 @@
         window.open(urlBusqueda, '_blank');
       }, 
       Offshoreleaks() {
-        const consulta = `${this.datosAlmacenados.valorN} ${this.datosAlmacenados.valorA} + Offshoreleaks`;
+        const consulta = `${this.datosAlmacenados.valorT}} Site:https://offshoreleaks.icij.org`;
         const urlBusqueda = `https://www.google.com/search?q=${encodeURIComponent(consulta)}`;
         this.datosAlmacenados.archivoTemp = this.datosAlmacenados.archivoOff;
         this.copyPaste(this.datosAlmacenados.archivoTemp);
